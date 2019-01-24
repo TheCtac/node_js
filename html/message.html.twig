@@ -1,0 +1,13 @@
+<div id='message'>
+    <div>
+        від : <b><a href="{{asset('/tanks/users/'~getUserLogin(mess.FromId))}}"  alt="кабинет користувача {{getUserLogin(mess.FromId)}}">
+		    {{ getUserLogin(mess.FromId)}}
+		</a></b><br>
+        кому : <b><a href="{{asset('/tanks/users/'~getUserLogin(mess.ToId))}}" alt="кабинет користувача {{getUserLogin(mess.ToId)}}">
+		    {{ getUserLogin(mess.ToId)}}
+		</a></b>
+    </div>
+    <div>Дата створення : {{mess.sendDate|date('d.m.Y H:i')}}</div><br>
+    <b>{{mess.theme}}</b><br><br>
+    {{mess.body}}<br>
+</div>  

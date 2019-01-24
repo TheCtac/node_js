@@ -1,0 +1,9 @@
+{% extends 'AcmeTanksBundle::base.html.twig' %}
+{%block title%}
+	{%trans%}не знайдено{%endtrans%}
+{%endblock %}	
+{%block theme%}
+    <font size='18' color='#f80'>{%trans%}cторінки{%endtrans%} {{path}}</font>
+	{% include 'AcmeTanksBundle::nofound.html.twig' %}   
+{%endblock%}	
+	

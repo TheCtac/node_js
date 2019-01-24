@@ -1,0 +1,43 @@
+{%extends 'AcmeTanksBundle::base.html.twig'%}
+{%block title %}
+		{{data.login}}s home
+{%endblock %}
+{%block theme %}
+        {% render(controller('AcmeTanksBundle:Functions:user_info',{'data': data.login})) %}
+		<div id='info'>
+			<g style='color:#fa0;font-size:18'>Активність користувача {{data.login}}</g><br>  
+			<div style='text-align:left;width:100%;'>
+			  <g onclick = "$('#userThemes').animate( { height:'toggle' } );"><div id='new_'> теми ({{themes|length}} )</div></g>
+			  
+			  <div id='userThemes' style='display:none;'>
+			  {% for theme in themes%}
+			    <div style='background:#222;;padding:1%;margin:0.2%'>
+	              <a href='{{path('acme_tanks_theme',{'theme':theme.name})}}'><font color='#fa0' size='4.5'>{{theme.name}}</font></a>
+		          теги: {{theme.tags|get_tags|raw}};
+		          додано:{{theme.date|date('d.m.Y H:i')}}<br>
+                </div>
+			  {% endfor %}
+			  </div>
+			  <div style='width:100%;height:3px;'></div>
+			  <g onclick = "$('#userComms').animate( { height:'toggle' } );"><div id='new_'>  коментарі ({{comms|length}})</div></g>
+			  <div id='userComms' style='display:none;'>
+			    {% for comm in comms %}
+			    <div style='background:#222;padding:1%;margin:0.2%'>
+	              <font  color='#fff' size='4.1'>{{comm.comm}} </font><br>
+				  коментар до теми : 
+				  <a href='
+				    {%if comm.type == 'theme' %}
+					  {{path('acme_tanks_theme',{'theme':comm.theme})}}
+					{%else %}  
+					  {{path('acme_tank',{'name':comm.theme})}}
+					{%endif %}  
+				  '>
+				    <font color='#fa0' size='4'>{{comm.theme}}</font>
+			      </a><br>
+		          додано:{{comm.date|date('d.m.Y H:i')}}
+                </div>
+			    {% endfor %}
+			  </div><br>
+		    </div>
+		</div>
+{%endblock %}
