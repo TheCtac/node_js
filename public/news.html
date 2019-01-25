@@ -1,0 +1,2907 @@
+<!DOCTYPE html>
+<html lang="ru" data-global-crop-class="global-crop" data-sidebar-mobile-class="crop-mobile" >
+<head>
+    
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>
+    World of Tanks – Бесплатная Онлайн-игра про Танки
+</title>
+        <!--[if (IE 8)|(IE 9)]>
+            <script type="text/javascript">
+                window.location = '/ru/old-browsers/';
+            </script>
+        -->
+
+        <script type="text/javascript">
+            if (window.opera) {
+                window.location = '/ru/old-browsers/';
+            }
+        </script>
+    <link rel="icon" type="image/png" href="https://worldoftanks.ru//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/wotp_static/img/core/frontend/scss/common/img/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="https://worldoftanks.ru//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/wotp_static/img/core/frontend/scss/common/img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://worldoftanks.ru//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/wotp_static/img/core/frontend/scss/common/img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://worldoftanks.ru//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/wotp_static/img/core/frontend/scss/common/img/favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://worldoftanks.ru//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/wotp_static/img/core/frontend/scss/common/img/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://worldoftanks.ru//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/wotp_static/img/core/frontend/scss/common/img/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://worldoftanks.ru//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/wotp_static/img/core/frontend/scss/common/img/apple-touch-icon-180x180.png">
+    <link rel="mask-icon" href="https://worldoftanks.ru//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/wotp_static/img/core/frontend/scss/common/img/safari-pinned-16x16.svg" color="#474747">
+    <meta name="theme-color" content="#1c1c1e">
+
+    
+        <link rel="sitemap" href="https://worldoftanks.ru/sitemap.xml">
+    
+
+    
+    <link rel="alternate" href="https://worldoftanks.eu/fr/" hreflang="fr-be" />
+    <link rel="alternate" href="https://worldoftanks.eu/fr/" hreflang="fr-fr" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-be" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-ba" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="bs-ba" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-bg" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="bg-bg" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-hr" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="hr-hr" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-cz" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-fr" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-ge" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="ka-ge" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-de" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-hu" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="hu-hu" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-il" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="he-il" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-it" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-lv" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="lv-lv" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-lt" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="lt-lt" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-nl" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="nl-nl" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-pl" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-ro" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="ro-ro" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="sr-rs" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-rs" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-sk" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="sk-sk" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-es" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-tr" />
+    <link rel="alternate" href="https://worldoftanks.eu/" hreflang="en-gb" />
+    <link rel="alternate" href="https://worldoftanks.eu/pl/" hreflang="pl-pl" />
+    <link rel="alternate" href="https://worldoftanks.eu/cs/" hreflang="cs-cz" />
+    <link rel="alternate" href="https://worldoftanks.eu/de/" hreflang="de-de" />
+    <link rel="alternate" href="https://worldoftanks.eu/tr/" hreflang="tr-tr" />
+    <link rel="alternate" href="https://worldoftanks.eu/it/" hreflang="it-it" />
+    <link rel="alternate" href="https://worldoftanks.eu/es/" hreflang="es-es" />
+    <link rel="alternate" href="https://worldoftanks.ru/" hreflang="ru-by" />
+    <link rel="alternate" href="https://worldoftanks.ru/" hreflang="ru-kz" />
+    <link rel="alternate" href="https://worldoftanks.ru/" hreflang="kk-kz" />
+    <link rel="alternate" href="https://worldoftanks.ru/" hreflang="ru-ru" />
+    <link rel="alternate" href="https://worldoftanks.ru/" hreflang="ru-ua" />
+    <link rel="alternate" href="https://worldoftanks.ru/" hreflang="uk-ua" />
+    <link rel="alternate" href="https://worldoftanks.asia/" hreflang="en-au" />
+    <link rel="alternate" href="https://worldoftanks.asia/" hreflang="en-in" />
+    <link rel="alternate" href="https://worldoftanks.asia/" hreflang="en-id" />
+    <link rel="alternate" href="https://worldoftanks.asia/" hreflang="en-jp" />
+    <link rel="alternate" href="https://worldoftanks.asia/" hreflang="en-ph" />
+    <link rel="alternate" href="https://worldoftanks.asia/" hreflang="en-th" />
+    <link rel="alternate" href="https://worldoftanks.asia/" hreflang="en-vn" />
+    <link rel="alternate" href="https://worldoftanks.asia/" hreflang="en-tw" />
+    <link rel="alternate" href="https://worldoftanks.asia/" hreflang="en-kr" />
+    <link rel="alternate" href="https://worldoftanks.asia/" hreflang="hi-in" />
+    <link rel="alternate" href="https://worldoftanks.asia/" hreflang="id-id" />
+    <link rel="alternate" href="https://worldoftanks.asia/vi/" hreflang="vi-vn" />
+    <link rel="alternate" href="https://worldoftanks.asia/ko/" hreflang="ko-kr" />
+    <link rel="alternate" href="https://worldoftanks.asia/th/" hreflang="th-th" />
+    <link rel="alternate" href="https://worldoftanks.asia/zh-tw/" hreflang="zh-tw" />
+    <link rel="alternate" href="https://worldoftanks.asia/ja/" hreflang="ja-jp" />
+    <link rel="alternate" href="https://worldoftanks.com/es-ar/" hreflang="es-ar" />
+    <link rel="alternate" href="https://worldoftanks.com/" hreflang="en-ar" />
+    <link rel="alternate" href="https://worldoftanks.com/" hreflang="en-br" />
+    <link rel="alternate" href="https://worldoftanks.com/" hreflang="en-us" />
+    <link rel="alternate" href="https://worldoftanks.com/pt-br/" hreflang="pt-br" />
+    
+    
+        <meta name="Description" content="Реалистичные битвы на легендарных танках, более 500 машин готовы к бою, 150 млн игроков по всему миру. Присоединяйся к культовой игре Мир Танков!" />
+    
+
+    
+        <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    
+    <meta content="unsafe-url" id="mref" name="referrer" />
+    <meta name="SKYPE_TOOLBAR" content="SKYPE_TOOLBAR_PARSER_COMPATIBLE" />
+    <link rel="canonical" href="https://worldoftanks.ru/" />
+
+    
+    
+    
+        <meta property="og:image" content="https://worldoftanks.ru/static/5.32.1_0d6e8f/common/img/wot_artboard.png" />
+        <meta name="thumbnail" content="https://worldoftanks.ru/static/5.32.1_0d6e8f/common/img/wot_artboard.png" />
+        <meta name="twitter:image:src" content="https://worldoftanks.ru/static/5.32.1_0d6e8f/common/img/wot_artboard.png" />
+    
+
+    <meta property="og:title" content="World of Tanks – Бесплатная Онлайн-игра про Танки"/>
+    
+        <meta property="og:description" content="Реалистичные битвы на легендарных танках, более 500 машин готовы к бою, 150 млн игроков по всему миру. Присоединяйся к культовой игре Мир Танков!"/>
+    
+    <meta property="og:url" content="https://worldoftanks.ru/"/>
+    <meta property="og:site_name" content="World of Tanks – Бесплатная Онлайн-игра про Танки"/>
+
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:title" content="World of Tanks – Бесплатная Онлайн-игра про Танки"/>
+    
+        <meta name="twitter:description" content="Реалистичные битвы на легендарных танках, более 500 машин готовы к бою, 150 млн игроков по всему миру. Присоединяйся к культовой игре Мир Танков!"/>
+    
+    <meta name="twitter:url" content="https://worldoftanks.ru/"/>
+    
+        <meta property="fb:pages" content="720002121403767"/>
+    
+
+
+    
+
+    
+        
+    
+    
+        
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://worldoftanks.ru//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/wotp_static/css/main.css" media="screen" id="screenview" />
+
+        
+    
+
+    <script>
+        WG = window.WG || {};
+        WG.vars = WG.vars || {};
+    </script>
+    
+    <script>
+            WG.vars.COMMON_MENU_ENABLED = true;
+            WG.vars.COMMON_MENU_LOADER_TIMEOUT = 3000;
+            WG.vars.COMMON_MENU_COOKIE_PATH = '/';
+            WG.vars.COMMON_MENU_COOKIE_PREFIX = 'cm.options.';
+    </script>
+    <script async charset="utf-8" type="text/javascript" id="common_menu_loader" src="//cdn-cm.gcdn.co/loader.min.js"
+        data-backend_url="//cm-ru.wargaming.net"
+	data-login_url="/auth/oid/new/"
+	data-token_url="/commonmenu/token/"
+	data-incomplete_profile_url="https://ru.wargaming.net/personal/"
+	data-user_id=""
+	data-content_layout_max_width="1440"
+	data-realm="ru"
+	data-service="ptl"
+	data-language="ru"
+	data-logout_url="/"
+	data-project="wot"
+	data-registration_url="/"
+	data-user_name=""
+    ></script>
+    
+
+    
+    
+
+
+<script>
+    window.Settings = window.Settings || {};
+    window.Settings.SITE_PATH = "/";
+
+    wgsdk = window.wgsdk || {};
+    wgsdk.vars = wgsdk.vars || {};
+
+    wgsdk.vars.ACCOUNT_AJAX_INFO_URL = "/ajax_info/";
+    wgsdk.vars.ACCOUNT_INFO_COOKIE_NAME = 'WGAI';
+
+    wgsdk.vars.DATE_DELIMITER = ".";
+    wgsdk.vars.DATE_FORMAT = "dmY";
+    wgsdk.vars.TIME_DELIMITER = ":";
+    wgsdk.vars.THOUSAND_SEPARATOR = " ";
+    wgsdk.vars.JS_TRUSTED_ROOTS = [];
+
+    wgsdk.vars.AUTH_CONFIRMATION_URL = "/auth/oid/confirm/";
+
+
+
+wgsdk.vars.WGCC_FE_URL = 'https://ru.wargaming.net/clans/';
+wgsdk.vars.WGCC_FE_CLAN_URL = 'https://ru.wargaming.net/clans/wot/clan_id/?utm_campaign=wot-portal&utm_medium=link&utm_source=main-menu';
+
+
+    wgsdk.vars.CLANWARS_SECOND_GLOBALMAP_INTERGATION_ENABLED = true;
+
+</script>
+
+
+
+
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/jquery/jquery-2.2.4.min.js"></script>
+    
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/wg_browser_detection/wg_browser_detection.js"></script>
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/lodash/lodash.min.js"></script>
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/uri/URI.min.js"></script>
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/amplify/amplify.core.min.js"></script>
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/amplify/amplify.store.min.js"></script>
+
+
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/jquery/jquery.cookie.js"></script>
+
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f//portal/i18n/ru.js"></script>
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/wgportalsdk/js/i18n_resources.js"></script>
+
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/wgsdk.js"></script>
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/wgsdk.time.js"></script>
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/resolution_manager.js"></script>
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/crop_manager.js"></script>
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/page_wrapper_manager.js"></script>
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/menubuilder/main_menu.js"></script>
+
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/wgsdk.forms.js"></script>
+
+
+
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/wgsdk.account_info.js"></script>
+
+
+    <script type="text/javascript" src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/csrf/js/csrf.js"></script>
+
+
+
+    <script type="text/javascript">
+        $(function() {
+            csrf.init({
+                COOKIE_NAME: "csrftoken",
+                COOKIE_URL: "/set_csrf_cookie/"
+            });
+
+            window.Settings = window.Settings || {};
+            window.Settings.CSRF_TOKEN = csrf.token;
+        })
+    </script>
+
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/porthole/porthole.js"></script>
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/jsbase/js/scripts.js"></script>
+
+<script>
+        window.Settings.HOME_URL = "/ru/";
+    </script>
+<script type="text/javascript">
+(function(window) {
+    window.Settings = window.Settings || {};
+    window.Settings.AuthenticationSSO = {"signinJsonpCallbackParameter": "callback", "signinMode": "notification", "checkIsAuthenticated": false, "signinJsonpUrl": "https://ru.wargaming.net/id/sso/signin/jsonp/", "attemptImmediateCookie": {"path": "/", "name": "ptl_auth_sso_attempt_immediate"}, "isAuthenticated": 0};
+})(window);
+</script>
+<script type="text/javascript">
+(function(window) {
+    window.Settings = window.Settings || {};
+    window.Settings.AuthenticationBase = {
+        'ErrorCodeUnauthorized': 401
+    };
+})(window);
+</script>
+<script type="text/javascript">
+(function(window) {
+    window.Settings = window.Settings || {};
+    window.Settings.AuthenticationOID = {"OpenIdVerifyUrl": "https://worldoftanks.ru/auth/oid/verify/", "OpenIdProcessTokenQueryParameter": "openid_process_token", "OpenIdVerifyImmediateUrl": "https://worldoftanks.ru/auth/oid/verify/immediate/", "LogoutUrl": "/auth/notify/signout/", "LogoutErrorRedirectUrl": "/ru/", "OpenIdProcessStatusUrlTemplate": "/auth/oid/process/status/<%= token %>/"};
+})(window);
+</script>
+<script type="text/javascript" charset="utf-8" src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/authenticationoid/js/openid.js"></script>
+
+    
+        
+    
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/geoip/region_widget.js"></script>
+    
+
+
+
+    
+    <script>
+        $(function(){
+            var botPattern = '(Googlebot|Bingbot|DuckDuckBot|Baiduspider|YandexBot|facebot|ia_archiver|Google Page Speed Insights|crawler|spider|robot|facebookexternalhit|heritrix)',
+                regExp = new RegExp(botPattern, 'i');
+
+            if (navigator && !regExp.test(navigator.userAgent)) {
+                new RegionWidget('challenge', '/geoip/region_widget/', 'popup');
+            }
+        });
+    </script>
+    
+
+
+    
+
+    
+        <script>
+    var PENDING_OPERATION_JAVASCRIPT_TIMEOUT = 15,
+        IFRAME_PROXY = 'https://worldoftanks.ru/utils/ssl_proxy/';
+</script>
+
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/modernizr/modernizr.js"></script>
+
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/jquery/jquery.mousewheel.js"> </script>
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/porthole/porthole.js"></script>
+
+
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/common/wot_hl_common.js"></script>
+
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/common/tooltips.js"></script>
+
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/common/wg_bg_parallax.js"></script>
+
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/init_cookie_referrer.js"></script>
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/iscroll/iscroll.js"></script>
+
+
+
+
+
+        
+        
+        
+        
+
+        
+    
+
+    
+
+    
+        <script type="text/javascript">
+            var NEWBIE_LIFETIME_COOKIE_NAME = 'newbie_lifetime',
+                NEWBIE_SESSION_COOKIE_NAME = 'newbie_session',
+                NEWBIE_LIFETIME_COOKIE_EXPIRATION_PERIOD = 1000,
+                VETERAN_COOKIE_NAME = 'uvt',
+                VETERAN_COOKIE_EXPIRATION_PERIOD = 365;
+        </script>
+        <script type="text/javascript" src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/user_recognition.js"></script>
+    
+</head>
+
+   
+    <body class="reg-RUS lang-ru " data-popup-visible="crop" data-sidebar-mobile-class="crop-mobile" data-overlay-show-class="overlay__show">
+
+    
+        
+        
+    <script type="text/javascript">
+        function loadGTM(code, name) {
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+                        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+                        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+                        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+            })(window,document,'script',name,code);
+        }
+    </script>
+
+    
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-6MXW" 
+                          height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            if (typeof window.is_auth_user === 'function' && window.is_auth_user()) {
+                loadGTM('GTM-3RH3', 'dataLayer');
+            } else {
+                loadGTM('GTM-6MXW', 'dataLayer');
+            }
+        </script>
+    
+
+
+
+        
+            
+                <script>
+                $(function() {
+                    'use strict';
+
+                    var accountInfo = wgsdk.account_info();
+
+                    if (!is_auth_user()) {
+                        return;
+                    }
+
+                    var fireTagsFromCookie = function (accountInfo) {
+                        var clanStatus = 'not clan gamer',
+                            premiumAccount = 'haven\'t premium account',
+                            battlesCountRanges = [
+                                [0, 499],
+                                [500, 999],
+                                [1000, 1999],
+                                [2000, 3999],
+                                [4000, 5999],
+                                [6000, 7999],
+                                [8000, 9999],
+                                [10000, 11999],
+                            ],
+                            battlesCountRange = '12000-and more',
+                            battlesCount,
+                            clanLeaderId;
+
+                        if (accountInfo.get_clan_id()) {
+                            clanStatus = 'clan gamer';
+
+                            clanLeaderId = accountInfo.get_clan_leader_id();
+                            if (clanLeaderId && clanLeaderId === accountInfo.get_spa_id()) {
+                                clanStatus = 'clans leader';
+                            }
+                        }
+
+                        if (accountInfo.is_premium_active()) {
+                            premiumAccount = 'have premium account';
+                        }
+
+                        battlesCount = accountInfo.get_battles_count();
+                        for (var i in battlesCountRanges) {
+                            if (!battlesCountRanges.hasOwnProperty(i)) {
+                                continue;
+                            }
+
+                            if (battlesCount >= battlesCountRanges[i][0] && battlesCount <= battlesCountRanges[i][1]) {
+                                battlesCountRange = battlesCountRanges[i][0] + '-' + battlesCountRanges[i][1];
+                                break;
+                            }
+                        }
+
+                        window.dataLayer = window.dataLayer || [];
+                        window.dataLayer.push({
+                            'clans': clanStatus,
+                            'premium_account': premiumAccount,
+                            'battles_count': battlesCountRange,
+                            'event': 'user_info'
+                        });
+                    };
+
+                    accountInfo.queue(fireTagsFromCookie);
+                });
+                </script>
+            
+        
+
+    
+
+    
+
+    
+
+<div class="page-wrapper js-page-wrapper  " data-popup-mobile-hidden="page-wrapper__hidden">
+    <div class="page-wrapper_inner">
+        
+        <div class="sparkles "></div>
+        
+            <nav class="nav">
+    <a class="nav_item nav_item__menu js-mobile-mainmenu-link" href="#"><span class="nav_hamburger">Меню</span></a>
+    <a class="nav_item nav_item__wot" href="https://worldoftanks.ru/">World of Tanks</a>
+    <a class="nav_item nav_item__cm js-mobile-commonmenu-link" href="#" data-mobile-open-class="nav_item__cm" data-mobile-close-class="nav_item__cm-open">Wargaming.net</a>
+</nav>
+
+
+<div class="nav-wrapper js-mainmenu-wrapper"
+     data-mobile-menu-opened-class="nav-wrapper__open"
+     data-mobile-menu-crop-class="mobile-menu-crop"
+     data-scroll-bottom-class="nav-wrapper__bottom"
+     data-scroll-bottom-initial-class="nav-wrapper__bottom-initial"
+     data-scroll-top-class="nav-wrapper__top"
+     data-scroll-top-initial-class="nav-wrapper__top-initial">
+
+    <div class="nav-wrapper_holder">
+        <ul class="nav-submenu">
+            <li class="js-mainmenu-item nav-submenu_item nav-submenu_item__wot" data-opened-class="nav-submenu_item__open">
+                <a class="nav-submenu_link" href="https://worldoftanks.ru/"></a>
+            </li>
+            
+                
+                <li class="js-mainmenu-item nav-submenu_item  " data-opened-class="nav-submenu_item__open">
+                    
+                        <a href="https://worldoftanks.ru/ru/game/" class="nav-submenu_link">ИГРА<span class="nav-submenu_arrow js-mainmenu-arrow"></span></a>
+                        <div class="nav-detail">
+                            <ul class="nav-detail_list">
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/game/download/">Скачать игру</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/one/">Всё о 1.0</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/news/">Новости</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/tankopedia/">Танковедение</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/content/guide/newcomers-guide/">Новичку</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/in_development/">В разработке</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/sandbox/">Песочница</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/content/eventcalendar/">Календарь событий</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/content/guide/">Руководство</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="http://ru.wot-economics.com/ru/?link_place=wotp_link_main-menu">Экономика</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/content/guide/general/achievements/">Достижения</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/content/docs/release_notes/">Обновления</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/content/guide/account_security/">Безопасность</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+                </li>
+                
+            
+                
+                <li class="js-mainmenu-item nav-submenu_item  " data-opened-class="nav-submenu_item__open">
+                    
+                        <a href="https://worldoftanks.ru/ru/ratings/" class="nav-submenu_link">Рейтинги<span class="nav-submenu_arrow js-mainmenu-arrow"></span></a>
+                        <div class="nav-detail">
+                            <ul class="nav-detail_list">
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/ratings/achievements/">Рейтинг по достижениям</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/ratings/vehicles/">Рейтинг по технике</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/ratings/ranked/">Ранговые бои</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+                </li>
+                
+            
+                
+                <li class="js-mainmenu-item nav-submenu_item  " data-opened-class="nav-submenu_item__open">
+                    
+                        <a href="https://worldoftanks.ru/ru/clanwars/?link_place=wotp_link_main-menu" class="nav-submenu_link">Кланы<span class="nav-submenu_arrow js-mainmenu-arrow"></span></a>
+                        <div class="nav-detail">
+                            <ul class="nav-detail_list">
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/clanwars/strongholds/">Укрепрайон</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="http://ru.wargaming.net/globalmap/?link_place=wotp_link_main-menu">Глобальная карта</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="https://ru.wargaming.net/clans/wot/leaderboards/?link_place=wotp_link_main-menu">Рейтинг кланов</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item nav-detail_item__hidden js-portal-menu-clan-link">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="https://ru.wargaming.net/clans/wot/clan_id/?link_place=wotp_link_main-menu">Мой клан</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item nav-detail_item__hidden js-portal-menu-recruitstation-link">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="https://ru.wargaming.net/clans/wot/find_clan/?link_place=wotp_link_main-menu">Подобрать клан</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item nav-detail_item__hidden js-portal-menu-clans-index-link">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="https://ru.wargaming.net/clans/wot/?link_place=wotp_link_main-menu">Клановый портал</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/clanwars/rating/season/">Рейтинг сезона</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+                </li>
+                
+            
+                
+                <li class="js-mainmenu-item nav-submenu_item  " data-opened-class="nav-submenu_item__open">
+                    
+                        <a  href="https://worldoftanks.ru/ru/tournaments/" class="nav-submenu_link">Турниры</a>
+                    
+                </li>
+                
+            
+                
+                <li class="js-mainmenu-item nav-submenu_item  " data-opened-class="nav-submenu_item__open">
+                    
+                        <a href="https://worldoftanks.ru/ru/media/" class="nav-submenu_link">МЕДИА<span class="nav-submenu_arrow js-mainmenu-arrow"></span></a>
+                        <div class="nav-detail">
+                            <ul class="nav-detail_list">
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/media/9/">Видео</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/media/1/">Арт</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/media/2/">Рендеры</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/media/4/">Фан-видео</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/media/10/">Моделирование</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/media/12/">Обучающие комиксы</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/media/13/">Саундтрек</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+                </li>
+                
+            
+                
+                <li class="js-mainmenu-item nav-submenu_item  " data-opened-class="nav-submenu_item__open">
+                    
+                        <a href="https://worldoftanks.ru/ru/community/" class="nav-submenu_link">СООБЩЕСТВО<span class="nav-submenu_arrow js-mainmenu-arrow"></span></a>
+                        <div class="nav-detail">
+                            <ul class="nav-detail_list">
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/community/accounts/show/me/">Мой профиль</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="http://forum.worldoftanks.ru/?link_place=wotp_link_main-menu">Форум</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/community/accounts/">Игроки</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item nav-detail_item__hidden js-portal-menu-recruitstation-link">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="https://ru.wargaming.net/clans/wot/find_clan/?link_place=wotp_link_main-menu">Подобрать клан</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  class="nav-detail_link js-portal-menu-link-text" href="https://worldoftanks.ru/ru/soft/">Полезный софт</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="http://wargaming.fm/?link_place=wotp_link_main-menu">Танковое радио</a>
+                                    </li>
+                                
+                                    <li class="nav-detail_item ">
+                                        <a  target="_blank" rel="noopener"  class="nav-detail_link js-portal-menu-link-text" href="https://wgmods.net/?link_place=wotp_link_main-menu">Портал модов</a>
+                                    </li>
+                                
+                            </ul>
+                        </div>
+                    
+                </li>
+                
+            
+            
+    
+
+    <li class="nav-submenu_item nav-submenu_item__button nav-submenu_item__button-hidden js-submenu-item-button"
+        data-hidden-class="nav-submenu_item__button-hidden">
+
+        
+            
+                <a class="big-button big-button__small js-referer js-download-game-link" href="http://red.wargaming.net/vnwtd159/?pub_id=pff_">
+                    <span class="big-button_text">Играть бесплатно</span>
+                </a>
+            
+        
+    </li>
+
+        </ul>
+        <span class="nav-wrapper_close js-mobile-mainmenu-close-link">Закрыть</span>
+    </div>
+</div>
+        
+        
+            <div class="cm-holder js-commonmenu-holder" data-mobile-opened-class="cm-holder__open">
+                
+                    <!-- common_menu: start -->
+<div id="common_menu">
+    <noscript>
+        <div id="common_menu_frame_wrap">
+            <iframe id="common_menu_frame" src="//cm-ru.wargaming.net/frame?backend_url=%2F%2Fcm-ru.wargaming.net&login_url=%2Fauth%2Foid%2Fnew%2F&token_url=%2Fcommonmenu%2Ftoken%2F&incomplete_profile_url=https%3A%2F%2Fru.wargaming.net%2Fpersonal%2F&content_layout_max_width=1440&realm=ru&service=ptl&language=ru&logout_url=%2F&project=wot&registration_url=%2F"></iframe>
+        </div>
+    </noscript>
+</div>
+<!-- common_menu: end -->
+<script type="text/javascript" content="utf-8">
+    if (WG.vars.COMMON_MENU_ENABLED && WG.CommonMenu) {
+        WG.CommonMenu.trigger('holder_ready');
+    }
+</script>
+    <div id="js-common-menu-fallback" class="commonmenu-fallback" data-visible-class="commonmenu-fallback__visible">
+        
+<script>
+
+
+wgsdk.vars.REGISTRATION_URL = 'http://cpm.wargaming.net/wpcxt8na/?pub_id=cmenu_';
+
+
+</script>
+
+
+
+
+<script>
+wgsdk.vars.CURRENT_REQUEST_LANGUAGE = 'ru';
+wgsdk.vars.DEFAULT_LANGUAGE = 'ru';
+wgsdk.vars.ALL_LANGUAGES = {"ru": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439", "fr": "Fran\u00e7ais", "en": "English", "es-ar": "Espa\u00f1ol \u2014 Am\u00e9rica Latina", "ko": "\ud55c\uad6d\uc5b4", "vi": "Ti\u1ebfng Vi\u1ec7t", "de": "Deutsch", "tr": "T\u00fcrk\u00e7e", "it": "Italiano", "zh-cn": "\u4e2d\u6587", "pt-br": "Portugu\u00eas", "es": "Espa\u00f1ol", "th": "\u0e44\u0e17\u0e22", "zh-tw": "\u7e41\u9ad4\u4e2d\u6587", "cs": "\u010ce\u0161tina", "ja": "\u65e5\u672c\u8a9e", "pl": "Polski"};
+wgsdk.vars.FRONTEND_LANGUAGES = {"ru": "\u0420\u0443\u0441\u0441\u043a\u0438\u0439"};
+
+wgsdk.vars.LANG_NAME_KEY = 'LANG_NAME_KEY';
+wgsdk.vars.LANG_CODE_KEY = 'LANG-CODE-KEY';
+wgsdk.vars.SPA_ID_KEY = '123456';
+wgsdk.vars.NICKNAME_KEY = 'NICKNAME_KEY';
+wgsdk.vars.LANG_COOKIE_NAME = 'hllang';
+
+
+</script>
+
+
+<script>
+
+
+wgsdk.vars.REGISTRATION_URL = 'http://cpm.wargaming.net/wpcxt8na/?pub_id=cmenu_';
+
+
+</script>
+
+
+<ul class="commonmenu-fallback_list" id="js-sdk_top_right_menu">
+
+    
+
+    
+
+
+    <li id="js-auth-wrapper" style="display:none">
+        <span class="commonmenu-fallback_text js-common-menu-fallback-error" style="display: none;">Не удалось войти.</span>
+        <div class="commonmenu-fallback_loader js-common-menu-fallback-loader" style="display: none;"></div>
+
+        <span class="commonmenu-fallback_text">
+            <a href="https://worldoftanks.ru/auth/oid/new/?next=/" data-next-url="/" class="js-auth-openid-link commonmenu-fallback_link">
+            <span>Войти</span>
+            </a>
+
+            <span class="js-registration_url" style="display: none">
+                или <a href="" class="js-referer commonmenu-fallback_link" >создать аккаунт</a>
+            </span>
+        </span>
+
+    </li>
+
+    <li id="js-auth-wrapper-nickname" style="display:none">
+
+        <span class="commonmenu-fallback_text">
+
+            
+            <a class="js-my_profile_link js-my_profile_nickname commonmenu-fallback_link" href="https://worldoftanks.ru/ru/community/accounts/show/me/" data-full_link="/ru/community/accounts/123456-NICKNAME_KEY/">
+                Мой профиль
+            </a>
+            
+
+        </span>
+        <span class="commonmenu-fallback_text">
+            <a href="#" class="js-auth-logout-link commonmenu-fallback_link" data-return-to="https://worldoftanks.ru/">Выход</a>
+        </span>
+
+    </li>
+</ul>
+
+
+    </div>
+                
+            </div>
+            <script type="text/javascript" src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/menu_loader.js"></script>
+        
+
+        <div class="content-wrapper ">
+            
+            
+                
+    
+                
+    <script>
+        var SERVER_TIME_URL = 'https://worldoftanks.ru/timestamp/',
+            VIDEO_COLLAPSED_COOKIE_KEY = 'mpvid';
+    </script>
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/knockout-3.4.2.js"></script>
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/spin/spin2.js"></script>
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/wg_ko_bindings.js"></script>
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/server_time_sync.js"></script>
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/countdown.ko.js"></script>
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/mainpage_video.js"></script>
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/main_page.js"></script>
+
+                
+                
+    <div class="content-wrapper_inner js-mainpage-content-wrapper-inner" data-no-indent-class="content-wrapper_inner__noindent-bottom">
+        
+
+        
+            <div class="promo-bg"></div>
+            
+                
+    <section class="promo promo__video  js-promo-video" data-promo-hide-class="promo__hide-video">
+        <div class="promo_inner promo_inner__video js-promo-inner">
+            <div class="promo_wrapper  js-promo-wrapper" data-promo-wrapper-hide-class="promo_wrapper__hide">
+                <video loop muted class="promo_video js-video"
+                    poster="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/wotp_static/img/core/frontend/scss/common/blocks/video-bg/img/poster.jpg"
+                    data-video-mp4="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/wotp_static/img/core/frontend/scss/common/blocks/video-bg/img/video-bg.mp4"
+                    data-video-webm="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/wotp_static/img/core/frontend/scss/common/blocks/video-bg/img/video-bg.webm">
+                </video>
+                <div class="promo_shadow"></div>
+            </div>
+            <div class="promo_descr  js-promo-descr" data-promo-descr-small-indent-class="promo_descr__small-indent">
+                <a href="https://worldoftanks.ru/" class="promo_logo promo_logo__small promo_logo__big js-promo-video-logo" data-promo-logo-small-class="promo_logo__big" tabindex="-1">Игра World of Tanks (Мир Танков)</a>
+                <div class="promo_content  js-promo-content" data-promo-content-hide-class="promo_content__hide">
+                    
+                        <p class="promo_info">World of Tanks — культовая ММО-игра о бронетехнике, покорившая миллионы игроков по всему миру. Разнообразие игровых карт, исторически достоверные машины, реалистичный геймплей — присоединяйтесь к армии танкистов и окунитесь в атмосферу легендарных сражений.</p>
+                    
+                    
+                        <a class="big-button big-button__blink js-referer js-download-game" href="http://red.wargaming.net/vnwtd159/?pub_id=pff_">
+                            <span class="big-button_text">Играть бесплатно</span>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="promo_collapse">
+            <span class="promo_expand promo_expand__show-desktop js-hide-video js-tooltip js-tooltip-id_js-tooltip-promo-video-hide" ></span>
+            <span class="promo_expand promo_expand__show-desktop promo_expand__show js-show-video js-tooltip js-tooltip-id_js-tooltip-promo-video-show" style="display: none"></span>
+        </div>
+        <div class="b-tooltip-main" id="js-tooltip-promo-video-hide">Свернуть</div>
+        <div class="b-tooltip-main" id="js-tooltip-promo-video-show">Развернуть</div>
+    </section>
+
+            
+        
+
+        
+    
+
+
+        
+        
+            <section class="carousel-grid">
+                <div class="carousel-grid_column">
+                    <div class="carousel js-slider-component js-carousel-341994" style="overflow: hidden;" data-slider-outside-class="carousel_link__outside">
+
+
+
+
+    <div class="carousel_inner">
+        
+            
+    <a class="carousel_link js-slider-frame "
+       href="https://worldoftanks.ru/b4r/1310/go?to=https://worldoftanks.ru/ru/content/offers/?link_place=homepage_banner_content"
+       >
+
+        
+            <span class="carousel_title">Специальные предложения</span>
+        
+        
+            <span class="carousel_pic-holder">
+                <span class="carousel_pic" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/615h346_specialoffers_fin_cTaSV5m.jpg');"></span>
+            </span>
+        
+    </a>
+
+        
+            
+    <a class="carousel_link js-slider-frame "
+       href="https://worldoftanks.ru/b4r/1359/go?to=https://worldoftanks.ru/ru/news/updates/wot-wgfest-future/"
+       >
+
+        
+            <span class="carousel_title">Что планируется на 2019 год</span>
+        
+        
+            <span class="carousel_pic-holder">
+                <span class="carousel_pic" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/01_wot_615x346-wg-fest2.jpg');"></span>
+            </span>
+        
+    </a>
+
+        
+            
+    
+
+    <a class="carousel_link js-slider-frame  js-active"
+       href="https://worldoftanks.ru/ru/news/updates/1-3-release/"
+       >
+
+        <span class="carousel_title">Обновление 1.3. Актуальная версия игры</span>
+        <span class="carousel_pic-holder">
+            <span class="carousel_pic" style="background-image: url(//ru-wotp.wgcdn.co/dcont/fb/image/1_3_update_615x346.jpg);"></span>
+        </span>
+    </a>
+
+
+        
+            
+    <a class="carousel_link js-slider-frame  carousel_link__outside"
+       href="https://worldoftanks.ru/b4r/1360/go?to=https://worldoftanks.ru/ru/news/clan-wars/soldaty-udachi/"
+       >
+
+        
+            <span class="carousel_title">«Солдаты удачи». Новое событие на Глобальной карте</span>
+        
+        
+            <span class="carousel_pic-holder">
+                <span class="carousel_pic" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/315-346_soldiers-01.jpg');"></span>
+            </span>
+        
+    </a>
+
+        
+            
+    
+
+    <a class="carousel_link js-slider-frame  carousel_link__outside"
+       href="https://worldoftanks.ru/ru/news/related/discord-wot/"
+       >
+
+        <span class="carousel_title">Место встречи: Discord</span>
+        <span class="carousel_pic-holder">
+            <span class="carousel_pic" style="background-image: url(//ru-wotp.wgcdn.co/dcont/fb/image/discord_small_615x346-2.jpg);"></span>
+        </span>
+    </a>
+
+
+        
+    </div>
+    
+        <span class="carousel_arrow carousel_arrow__prev js-prev-slide"></span>
+        <span class="carousel_arrow carousel_arrow__next js-next-slide"></span>
+        <div class="carousel_nav">
+            <nav class="slider-dots slider-dots__visible slider-dots__type2 js-slider-container">
+                
+                    <div class="slider-dots_item js-slider-element " data-active-class="slider-dots_item__active"></div>
+                
+                    <div class="slider-dots_item js-slider-element " data-active-class="slider-dots_item__active"></div>
+                
+                    <div class="slider-dots_item js-slider-element slider-dots_item__active" data-active-class="slider-dots_item__active"></div>
+                
+                    <div class="slider-dots_item js-slider-element " data-active-class="slider-dots_item__active"></div>
+                
+                    <div class="slider-dots_item js-slider-element " data-active-class="slider-dots_item__active"></div>
+                
+            </nav>
+        </div>
+    
+
+</div>
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/hammer/hammer.min.js"></script>
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/carousel/js/carousel_slider.js"></script>
+<script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/carousel/js/carousel_widget.js"></script>
+<script>
+    (function() {
+        'use strict';
+
+        var $carouselWidget = $('.js-carousel-341994'),
+            options = {
+                container: '.js-carousel-341994',
+            };
+
+        $(function() {
+            if ($carouselWidget.length) {
+                if (typeof CarouselSlider === 'function' && typeof Hammer === 'function' && typeof CarouselWidget === 'function') {
+                    new CarouselWidget(options);
+                } else {
+                    $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/hammer/hammer.min.js', function() {
+                        $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/carousel/js/carousel_slider.js', function() {
+                            $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/carousel/js/carousel_widget.js', function() {
+                                new CarouselWidget(options);
+                            });
+                        });
+                    });
+                }
+            }
+        });
+    })();
+</script>
+                </div>
+                <div class="carousel-grid_column">
+                    
+    
+    <a class="buy-button buy-button__fixed" href="https://ru.wargaming.net/shop/wot/main/">
+        <span class="buy-button_text">Премиум магазин</span>
+    </a>
+    
+        <a class="showcase showcase__carousel showcase__bordered" href="https://worldoftanks.ru/b4r/1300/go?to=https://ru.wargaming.net/shop/wot/main/?utm_campaign=wot-portal&amp;utm_medium=banner&amp;utm_source=home-page&amp;utm_content=prem-shop-1-main-new">
+            <span class="showcase_pic" style="background-image: url(//ru-wotp.wgcdn.co/dcont/fb/image/wot_premshop-banner_ru.jpg);"></span>
+            
+        </a>
+    
+
+                </div>
+            </section>
+        
+
+        <section class="columns-wrapper js-widget-all-news-static-341995">
+    <header class="columns-wrapper_header">
+        <div class="columns-wrapper_holder">
+            <h2 class="columns-wrapper_title columns-wrapper_title__main">Последние новости</h2>
+        </div>
+        <a href="https://worldoftanks.ru/ru/news/" class="link-more link-more__nowrap">Все новости</a>
+    </header>
+    <div class="columns-wrapper_inner">
+        
+            
+                
+                    <div class="columns-wrapper_column">
+                        
+                            
+<article class="small-news" data-type="news_big">
+    <a href="https://worldoftanks.ru/ru/news/fun/vbr-110/" class="small-news_link small-news_link__wide">
+        <span class="small-news_img-holder small-news_img-holder__wide">
+            <span class="small-news_img" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/315-346_vbr.jpg');">
+                ВБР 110. Полёт валькирий
+            </span>
+            
+        </span>
+    </a>
+    <div class="small-news_info small-news_info__wide">
+        <a href="https://worldoftanks.ru/ru/news/fun/vbr-110/" class="small-news_title">
+            <span class="small-news_heading">ВБР 110. Полёт валькирий</span>
+            
+                <span class="small-news_description small-news_description__wide">Танки под водой, на земле и в воздухе!</span>
+            
+        </a>
+        <a href="https://worldoftanks.ru/ru/news/fun/" class="small-news_cat">Развлечения</a>
+        <time datetime="2019-01-17 14:00:00"></time>
+        
+            <a href="http://forum.worldoftanks.ru/index.php?/topic/2028002-" class="small-news_discuss">обсудить</a>
+        
+    </div>
+</article>
+                        
+                    </div>
+                
+            
+                
+                    <div class="columns-wrapper_column">
+                        
+                            
+
+<article class="small-news" data-type="news_small">
+    <a href="https://worldoftanks.ru/ru/news/updates/izmeneniya-lichnyy-boyevoy-zadach/" class="small-news_link" target="_blank" rel="noopener">
+        <span class="small-news_img-holder">
+            <span class="small-news_img" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/615h346-1-4.png');">
+                Изменения личных боевых задач и наградных машин
+            </span>
+            
+                <span class="important-text">Важное</span>
+            
+        </span>
+    </a>
+    <div class="small-news_info">
+        <a href="https://worldoftanks.ru/ru/news/updates/izmeneniya-lichnyy-boyevoy-zadach/" class="small-news_title" target="_blank" rel="noopener">
+            Изменения личных боевых задач и наградных машин
+            
+                <span class="small-news_description">Узнайте, как изменятся ЛБЗ в версии 1.4.</span>
+            
+        </a>
+        <a href="https://worldoftanks.ru/ru/news/updates/" class="small-news_cat">Обновления</a>
+        <time datetime="2019-01-17 13:00:00"></time>
+        
+            <a href="http://forum.worldoftanks.ru/index.php?/topic/2027986-" class="small-news_discuss">обсудить</a>
+        
+    </div>
+</article>
+                        
+                            
+
+<article class="small-news" data-type="news_small">
+    <a href="https://worldoftanks.ru/ru/news/fun/lrn-157/" class="small-news_link" target="_blank" rel="noopener">
+        <span class="small-news_img-holder">
+            <span class="small-news_img" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/lrn_157_02.jpg');">
+                Лучшие реплеи недели. Эпизод 157
+            </span>
+            
+        </span>
+    </a>
+    <div class="small-news_info">
+        <a href="https://worldoftanks.ru/ru/news/fun/lrn-157/" class="small-news_title" target="_blank" rel="noopener">
+            Лучшие реплеи недели. Эпизод 157
+            
+                <span class="small-news_description">Новый выпуск популярной танковой передачи. Смотрим!</span>
+            
+        </a>
+        <a href="https://worldoftanks.ru/ru/news/fun/" class="small-news_cat">Развлечения</a>
+        <time datetime="2019-01-16 15:29:00"></time>
+        
+            <a href="http://forum.worldoftanks.ru/index.php?/topic/2027778-" class="small-news_discuss">обсудить</a>
+        
+    </div>
+</article>
+                        
+                            
+
+<article class="small-news" data-type="news_small">
+    <a href="https://worldoftanks.ru/ru/news/special-offers/operatsiya-koltso/" class="small-news_link" target="_blank" rel="noopener">
+        <span class="small-news_img-holder">
+            <span class="small-news_img" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/615-stalingrad.jpg');">
+                Операция «Кольцо»
+            </span>
+            
+                <span class="important-text">Важное</span>
+            
+        </span>
+    </a>
+    <div class="small-news_info">
+        <a href="https://worldoftanks.ru/ru/news/special-offers/operatsiya-koltso/" class="small-news_title" target="_blank" rel="noopener">
+            Операция «Кольцо»
+            
+                <span class="small-news_description">С 14 по 21 января — скидка на оборудование и награды за выполнение боевых задач.</span>
+            
+        </a>
+        <a href="https://worldoftanks.ru/ru/news/special-offers/" class="small-news_cat">Акции</a>
+        <time datetime="2019-01-16 15:20:35"></time>
+        
+            <a href="http://forum.worldoftanks.ru/index.php?/topic/2027241-" class="small-news_discuss">обсудить</a>
+        
+    </div>
+</article>
+                        
+                    </div>
+                
+            
+                
+                    <div class="columns-wrapper_column">
+                        
+                            
+
+<article class="small-news" data-type="news_small">
+    <a href="https://worldoftanks.ru/ru/news/special-offers/lt432-even90-14jan2019/" class="small-news_link" target="_blank" rel="noopener">
+        <span class="small-news_img-holder">
+            <span class="small-news_img" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/615h346_hhph37o.jpg');">
+                ЛТ-432 и ELC EVEN 90 в Премиум магазине
+            </span>
+            
+                <span class="important-text">Важное</span>
+            
+        </span>
+    </a>
+    <div class="small-news_info">
+        <a href="https://worldoftanks.ru/ru/news/special-offers/lt432-even90-14jan2019/" class="small-news_title" target="_blank" rel="noopener">
+            ЛТ-432 и ELC EVEN 90 в Премиум магазине
+            
+                <span class="small-news_description">Выбираем своего премиум разведчика и фармим в стиле ЛТ!</span>
+            
+        </a>
+        <a href="https://worldoftanks.ru/ru/news/special-offers/" class="small-news_cat">Акции</a>
+        <time datetime="2019-01-16 15:10:54"></time>
+        
+            <a href="http://forum.worldoftanks.ru/index.php?/topic/2027269-" class="small-news_discuss">обсудить</a>
+        
+    </div>
+</article>
+                        
+                            
+
+<article class="small-news" data-type="news_small">
+    <a href="https://worldoftanks.ru/ru/news/updates/1-4-obshij-test/" class="small-news_link" target="_blank" rel="noopener">
+        <span class="small-news_img-holder">
+            <span class="small-news_img" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/615h346-1-4.png');">
+                Общий тест обновления 1.4 остановлен
+            </span>
+            
+                <span class="important-text">Важное</span>
+            
+        </span>
+    </a>
+    <div class="small-news_info">
+        <a href="https://worldoftanks.ru/ru/news/updates/1-4-obshij-test/" class="small-news_title" target="_blank" rel="noopener">
+            Общий тест обновления 1.4 остановлен
+            
+                <span class="small-news_description">Колёсная техника, новая карта и многое другое, что станет доступным в ближайшем обновлении.</span>
+            
+        </a>
+        <a href="https://worldoftanks.ru/ru/news/updates/" class="small-news_cat">Обновления</a>
+        <time datetime="2019-01-16 15:00:18"></time>
+        
+    </div>
+</article>
+                        
+                            
+
+<article class="small-news" data-type="news_small">
+    <a href="https://worldoftanks.ru/ru/news/special-offers/exp-exchange/" class="small-news_link" target="_blank" rel="noopener">
+        <span class="small-news_img-holder">
+            <span class="small-news_img" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/exp-exchange-615.jpg');">
+                Успей перевести опыт выгодно!
+            </span>
+            
+                <span class="important-text">Важное</span>
+            
+        </span>
+    </a>
+    <div class="small-news_info">
+        <a href="https://worldoftanks.ru/ru/news/special-offers/exp-exchange/" class="small-news_title" target="_blank" rel="noopener">
+            Успей перевести опыт выгодно!
+            
+                <span class="small-news_description">С 12 по 19 января — бонус при переводе опыта в свободный.</span>
+            
+        </a>
+        <a href="https://worldoftanks.ru/ru/news/special-offers/" class="small-news_cat">Акции</a>
+        <time datetime="2019-01-16 14:51:41"></time>
+        
+            <a href="http://forum.worldoftanks.ru/index.php?/topic/2026584-" class="small-news_discuss">обсудить</a>
+        
+    </div>
+</article>
+                        
+                    </div>
+                
+            
+        
+    </div>
+</section>
+<section class="columns-wrapper js-widget-all-news-341995" style="display:none" data-bind="visible: true">
+    <header class="columns-wrapper_header">
+        <div class="columns-wrapper_holder">
+            <h2 class="columns-wrapper_title columns-wrapper_title__main">Последние новости</h2>
+        </div>
+        <a href="https://worldoftanks.ru/ru/news/" class="link-more link-more__nowrap">Все новости</a>
+    </header>
+    <div class="columns-wrapper_inner">
+        <!-- ko foreach: {data: columns, as: 'column'} -->
+        <div class="columns-wrapper_column"
+             data-bind="foreach: {data: column.snippets, as: 'snippet'}">
+
+            <!-- ko template: {name: snippet.templateName + '-template', data: snippet } -->
+            <!-- /ko -->
+        </div>
+        <!-- /ko -->
+    </div>
+    
+        <script type="text/html" id="news-small-template">
+<article class="small-news">
+    <a class="small-news_link" data-bind="css: {'small-news_link__hover': isHovered}, attr: {href: data.url}, event: {mouseenter: activateHover.bind($data), mouseleave: deactivateHover.bind($data)}">
+        <span class="small-news_img-holder">
+            <span class="small-news_img" data-bind="style: {'background-image': 'url(' + data.image + ')'}, text: data.title"></span>
+            <!-- ko if: data.is_important -->
+                <span class="important-text">Важное</span>
+            <!-- /ko -->
+        </span>
+    </a>
+    <div class="small-news_info">
+        <a class="small-news_title" data-bind="css: {'small-news_title__hover': isHovered}, attr: {href: data.url}, event: {mouseenter: activateHover.bind($data), mouseleave: deactivateHover.bind($data)}">
+            <span data-bind="text: data.title"></span>
+            <span class="small-news_description" data-bind="text: truncatedDescription, visible: data.description"></span>
+        </a>
+        <a class="small-news_cat" data-bind="text: data.category_title, attr: {href: data.category_url}"></a>
+        <span class="small-news_time" data-bind="relativeTime: data.publication_start">&nbsp;</span>
+        <a class="small-news_discuss" data-bind="attr: {href: data.forum_url}, visible: data.forum_url">обсудить</a>
+    </div>
+</article>
+</script>
+
+<script type="text/html" id="news-big-template">
+<article class="small-news">
+    <a class="small-news_link small-news_link__wide" data-bind="css: {'small-news_link__hover': isHovered}, attr: {href: data.url}, event: {mouseenter: activateHover.bind($data), mouseleave: deactivateHover.bind($data)}">
+        <span class="small-news_img-holder small-news_img-holder__wide">
+            <span class="small-news_img" data-bind="style: {'background-image': 'url(' + data.image + ')'}, text: data.title"></span>
+            <!-- ko if: data.is_important -->
+                <span class="important-text">Важное</span>
+            <!-- /ko -->
+        </span>
+    </a>
+    <div class="small-news_info small-news_info__wide">
+        <a class="small-news_title" data-bind="css: {'small-news_title__hover': isHovered}, attr: {href: data.url}, event: {mouseenter: activateHover.bind($data), mouseleave: deactivateHover.bind($data)}">
+            <span class="small-news_heading" data-bind="text: data.title"></span>
+            <span class="small-news_description small-news_description__wide" data-bind="text: truncatedDescription, visible: data.description"></span>
+        </a>
+        <a class="small-news_cat" data-bind="text: data.category_title, attr: {href: data.category_url}"></a>
+        <span class="small-news_time" data-bind="relativeTime: data.publication_start">&nbsp;</span>
+        <a class="small-news_discuss" data-bind="attr: {href: data.forum_url}, visible: data.forum_url">обсудить</a>
+    </div>
+</article>
+</script>
+    
+    <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/all_news/js/all_news.js"></script>
+    <script>
+        (function() {
+            'use strict';
+
+            function initWidget() {
+                new AllNewsWidget({
+                        id: 341995,
+                        container: '.js-widget-all-news-341995',
+                        staticContainer: '.js-widget-all-news-static-341995',
+                        initialData: {
+  "all": [
+    [
+      {
+        "data": {
+          "category_title": "\u0420\u0430\u0437\u0432\u043b\u0435\u0447\u0435\u043d\u0438\u044f", 
+          "category_url": "/ru/news/fun/", 
+          "description": "\u0422\u0430\u043d\u043a\u0438 \u043f\u043e\u0434 \u0432\u043e\u0434\u043e\u0439, \u043d\u0430 \u0437\u0435\u043c\u043b\u0435 \u0438 \u0432 \u0432\u043e\u0437\u0434\u0443\u0445\u0435!", 
+          "forum_url": "http://forum.worldoftanks.ru/index.php?/topic/2028002-", 
+          "id": 12280, 
+          "image": "//ru-wotp.wgcdn.co/dcont/fb/image/315-346_vbr.jpg", 
+          "is_important": false, 
+          "publication_start": "1547733600", 
+          "title": "\u0412\u0411\u0420 110. \u041f\u043e\u043b\u0451\u0442 \u0432\u0430\u043b\u044c\u043a\u0438\u0440\u0438\u0439", 
+          "url": "/ru/news/fun/vbr-110/"
+        }, 
+        "type": "news_big"
+      }
+    ], 
+    [
+      {
+        "data": {
+          "category_title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f", 
+          "category_url": "/ru/news/updates/", 
+          "description": "\u0423\u0437\u043d\u0430\u0439\u0442\u0435, \u043a\u0430\u043a \u0438\u0437\u043c\u0435\u043d\u044f\u0442\u0441\u044f \u041b\u0411\u0417 \u0432 \u0432\u0435\u0440\u0441\u0438\u0438 1.4.", 
+          "forum_url": "http://forum.worldoftanks.ru/index.php?/topic/2027986-", 
+          "id": 12277, 
+          "image": "//ru-wotp.wgcdn.co/dcont/fb/image/615h346-1-4.png", 
+          "is_important": true, 
+          "publication_start": "1547730000", 
+          "title": "\u0418\u0437\u043c\u0435\u043d\u0435\u043d\u0438\u044f \u043b\u0438\u0447\u043d\u044b\u0445 \u0431\u043e\u0435\u0432\u044b\u0445 \u0437\u0430\u0434\u0430\u0447 \u0438 \u043d\u0430\u0433\u0440\u0430\u0434\u043d\u044b\u0445 \u043c\u0430\u0448\u0438\u043d", 
+          "url": "/ru/news/updates/izmeneniya-lichnyy-boyevoy-zadach/"
+        }, 
+        "type": "news_small"
+      }, 
+      {
+        "data": {
+          "category_title": "\u0420\u0430\u0437\u0432\u043b\u0435\u0447\u0435\u043d\u0438\u044f", 
+          "category_url": "/ru/news/fun/", 
+          "description": "\u041d\u043e\u0432\u044b\u0439 \u0432\u044b\u043f\u0443\u0441\u043a \u043f\u043e\u043f\u0443\u043b\u044f\u0440\u043d\u043e\u0439 \u0442\u0430\u043d\u043a\u043e\u0432\u043e\u0439 \u043f\u0435\u0440\u0435\u0434\u0430\u0447\u0438. \u0421\u043c\u043e\u0442\u0440\u0438\u043c!", 
+          "forum_url": "http://forum.worldoftanks.ru/index.php?/topic/2027778-", 
+          "id": 12274, 
+          "image": "//ru-wotp.wgcdn.co/dcont/fb/image/lrn_157_02.jpg", 
+          "is_important": false, 
+          "publication_start": "1547652540", 
+          "title": "\u041b\u0443\u0447\u0448\u0438\u0435 \u0440\u0435\u043f\u043b\u0435\u0438 \u043d\u0435\u0434\u0435\u043b\u0438. \u042d\u043f\u0438\u0437\u043e\u0434 157", 
+          "url": "/ru/news/fun/lrn-157/"
+        }, 
+        "type": "news_small"
+      }, 
+      {
+        "data": {
+          "category_title": "\u0410\u043a\u0446\u0438\u0438", 
+          "category_url": "/ru/news/special-offers/", 
+          "description": "\u0421 14 \u043f\u043e 21 \u044f\u043d\u0432\u0430\u0440\u044f \u2014 \u0441\u043a\u0438\u0434\u043a\u0430 \u043d\u0430 \u043e\u0431\u043e\u0440\u0443\u0434\u043e\u0432\u0430\u043d\u0438\u0435 \u0438 \u043d\u0430\u0433\u0440\u0430\u0434\u044b \u0437\u0430 \u0432\u044b\u043f\u043e\u043b\u043d\u0435\u043d\u0438\u0435 \u0431\u043e\u0435\u0432\u044b\u0445 \u0437\u0430\u0434\u0430\u0447.", 
+          "forum_url": "http://forum.worldoftanks.ru/index.php?/topic/2027241-", 
+          "id": 12268, 
+          "image": "//ru-wotp.wgcdn.co/dcont/fb/image/615-stalingrad.jpg", 
+          "is_important": true, 
+          "publication_start": "1547652035", 
+          "title": "\u041e\u043f\u0435\u0440\u0430\u0446\u0438\u044f \u00ab\u041a\u043e\u043b\u044c\u0446\u043e\u00bb", 
+          "url": "/ru/news/special-offers/operatsiya-koltso/"
+        }, 
+        "type": "news_small"
+      }
+    ], 
+    [
+      {
+        "data": {
+          "category_title": "\u0410\u043a\u0446\u0438\u0438", 
+          "category_url": "/ru/news/special-offers/", 
+          "description": "\u0412\u044b\u0431\u0438\u0440\u0430\u0435\u043c \u0441\u0432\u043e\u0435\u0433\u043e \u043f\u0440\u0435\u043c\u0438\u0443\u043c \u0440\u0430\u0437\u0432\u0435\u0434\u0447\u0438\u043a\u0430 \u0438 \u0444\u0430\u0440\u043c\u0438\u043c \u0432 \u0441\u0442\u0438\u043b\u0435 \u041b\u0422!", 
+          "forum_url": "http://forum.worldoftanks.ru/index.php?/topic/2027269-", 
+          "id": 12269, 
+          "image": "//ru-wotp.wgcdn.co/dcont/fb/image/615h346_hhph37o.jpg", 
+          "is_important": true, 
+          "publication_start": "1547651454", 
+          "title": "\u041b\u0422-432 \u0438 ELC EVEN 90 \u0432 \u041f\u0440\u0435\u043c\u0438\u0443\u043c \u043c\u0430\u0433\u0430\u0437\u0438\u043d\u0435", 
+          "url": "/ru/news/special-offers/lt432-even90-14jan2019/"
+        }, 
+        "type": "news_small"
+      }, 
+      {
+        "data": {
+          "category_title": "\u041e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f", 
+          "category_url": "/ru/news/updates/", 
+          "description": "\u041a\u043e\u043b\u0451\u0441\u043d\u0430\u044f \u0442\u0435\u0445\u043d\u0438\u043a\u0430, \u043d\u043e\u0432\u0430\u044f \u043a\u0430\u0440\u0442\u0430 \u0438 \u043c\u043d\u043e\u0433\u043e\u0435 \u0434\u0440\u0443\u0433\u043e\u0435, \u0447\u0442\u043e \u0441\u0442\u0430\u043d\u0435\u0442 \u0434\u043e\u0441\u0442\u0443\u043f\u043d\u044b\u043c \u0432 \u0431\u043b\u0438\u0436\u0430\u0439\u0448\u0435\u043c \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u0438.", 
+          "forum_url": "", 
+          "id": 12270, 
+          "image": "//ru-wotp.wgcdn.co/dcont/fb/image/615h346-1-4.png", 
+          "is_important": true, 
+          "publication_start": "1547650818", 
+          "title": "\u041e\u0431\u0449\u0438\u0439 \u0442\u0435\u0441\u0442 \u043e\u0431\u043d\u043e\u0432\u043b\u0435\u043d\u0438\u044f 1.4 \u043e\u0441\u0442\u0430\u043d\u043e\u0432\u043b\u0435\u043d", 
+          "url": "/ru/news/updates/1-4-obshij-test/"
+        }, 
+        "type": "news_small"
+      }, 
+      {
+        "data": {
+          "category_title": "\u0410\u043a\u0446\u0438\u0438", 
+          "category_url": "/ru/news/special-offers/", 
+          "description": "\u0421 12 \u043f\u043e 19 \u044f\u043d\u0432\u0430\u0440\u044f \u2014 \u0431\u043e\u043d\u0443\u0441 \u043f\u0440\u0438 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0435 \u043e\u043f\u044b\u0442\u0430 \u0432 \u0441\u0432\u043e\u0431\u043e\u0434\u043d\u044b\u0439.", 
+          "forum_url": "http://forum.worldoftanks.ru/index.php?/topic/2026584-", 
+          "id": 12267, 
+          "image": "//ru-wotp.wgcdn.co/dcont/fb/image/exp-exchange-615.jpg", 
+          "is_important": true, 
+          "publication_start": "1547650301", 
+          "title": "\u0423\u0441\u043f\u0435\u0439 \u043f\u0435\u0440\u0435\u0432\u0435\u0441\u0442\u0438 \u043e\u043f\u044b\u0442 \u0432\u044b\u0433\u043e\u0434\u043d\u043e!", 
+          "url": "/ru/news/special-offers/exp-exchange/"
+        }, 
+        "type": "news_small"
+      }
+    ]
+  ]
+}
+                    });
+            }
+
+            if (typeof AllNewsWidget === 'function') {
+                initWidget();
+            } else {
+                $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/all_news/js/all_news.js').then(initWidget);
+            }
+        })();
+    </script>
+</section>
+        
+    
+        <div class="promote-slider promote-slider__bg js-related-list js-special-offers-341996">
+            
+                <div class="promote-slider_bg" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/specials-bg.png');"></div>
+            
+            <div class="promote-slider_inner">
+                <h2 class="promote-slider_title">Акции</h2>
+                <div class="promote-slider_holder js-slider-holder" data-transition-class="promote-slider_holder-transition">
+                    <ul class="promote-slider_list promote-slider_list__collapsed promote-slider_list__transparent promote-slider_list__transition js-promote-slider-list"
+                        data-slider-transition-class="promote-slider_list__transition"
+                        data-collapse-list-class="promote-slider_list__collapsed"
+                        data-transparent-list-class="promote-slider_list__transparent">
+
+                        
+                        <!-- ko with: countdowns[1402] -->
+                            <!-- ko if: !isExpired() -->
+                                <li class="promote-slider_item js-promote-slider-item js-slider-frame">
+                                    <a class="news-view js-related-link" href="https://worldoftanks.ru/ru/news/special-offers/lt432-even90-14jan2019/" draggable="false">
+                                        <span class="news-view_header">
+                                            <span class="news-view_pic" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/615h346_hhph37o.jpg');"></span>
+                                            <span class="news-view_info">
+                                                <span class="news-view_title">ЛТ-432 и ELC EVEN 90 в Премиум магазине</span>
+                                            </span>
+                                        </span>
+                                        <span class="news-view_data">
+                                            <!-- ko if: eventStatus() === EVENT_STATUSES.PLANNING -->
+                                                <span class="news-view_text" style="display: none" data-bind="visible: true">До начала:</span>
+                                            <!-- /ko -->
+                                            <!-- ko if: eventStatus() === EVENT_STATUSES.ACTIVE -->
+                                                <span class="news-view_text" style="display: none" data-bind="visible: true">До завершения:</span>
+                                            <!-- /ko -->
+                                            <span class="news-view_nums" style="display: none" data-bind="visible: true, css: {'news-view_nums__future': eventStatus() === EVENT_STATUSES.PLANNING}">
+                                                <!-- ko if: daysLeft() > 0 -->
+                                                    <span data-bind="text: daysLeft"></span><span class="news-view_label" data-bind="text: daysLeftText()"></span>
+                                                <!-- /ko -->
+                                                <!-- ko if: daysLeft() === 0 -->
+                                                    <span data-bind="leadingZero: hoursLeft"></span><span class="news-view_label" data-bind="text: hoursLeftText()"></span>
+                                                    <span class="news-view_colon">:</span>
+                                                    <span data-bind="leadingZero: minutesLeft"></span><span class="news-view_label" data-bind="text: minutesLeftText()"></span>
+                                                    <span class="news-view_colon">:</span>
+                                                    <span data-bind="leadingZero: secondsLeft"></span><span class="news-view_label" data-bind="text: secondsLeftText()"></span>
+                                                <!-- /ko -->
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                            <!-- /ko -->
+                        <!-- /ko -->
+                        
+                        <!-- ko with: countdowns[1400] -->
+                            <!-- ko if: !isExpired() -->
+                                <li class="promote-slider_item js-promote-slider-item js-slider-frame">
+                                    <a class="news-view js-related-link" href="https://worldoftanks.ru/ru/news/special-offers/operatsiya-koltso/" draggable="false">
+                                        <span class="news-view_header">
+                                            <span class="news-view_pic" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/615-stalingrad.jpg');"></span>
+                                            <span class="news-view_info">
+                                                <span class="news-view_title">Операция «Кольцо»</span>
+                                            </span>
+                                        </span>
+                                        <span class="news-view_data">
+                                            <!-- ko if: eventStatus() === EVENT_STATUSES.PLANNING -->
+                                                <span class="news-view_text" style="display: none" data-bind="visible: true">До начала:</span>
+                                            <!-- /ko -->
+                                            <!-- ko if: eventStatus() === EVENT_STATUSES.ACTIVE -->
+                                                <span class="news-view_text" style="display: none" data-bind="visible: true">До завершения:</span>
+                                            <!-- /ko -->
+                                            <span class="news-view_nums" style="display: none" data-bind="visible: true, css: {'news-view_nums__future': eventStatus() === EVENT_STATUSES.PLANNING}">
+                                                <!-- ko if: daysLeft() > 0 -->
+                                                    <span data-bind="text: daysLeft"></span><span class="news-view_label" data-bind="text: daysLeftText()"></span>
+                                                <!-- /ko -->
+                                                <!-- ko if: daysLeft() === 0 -->
+                                                    <span data-bind="leadingZero: hoursLeft"></span><span class="news-view_label" data-bind="text: hoursLeftText()"></span>
+                                                    <span class="news-view_colon">:</span>
+                                                    <span data-bind="leadingZero: minutesLeft"></span><span class="news-view_label" data-bind="text: minutesLeftText()"></span>
+                                                    <span class="news-view_colon">:</span>
+                                                    <span data-bind="leadingZero: secondsLeft"></span><span class="news-view_label" data-bind="text: secondsLeftText()"></span>
+                                                <!-- /ko -->
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                            <!-- /ko -->
+                        <!-- /ko -->
+                        
+                        <!-- ko with: countdowns[1399] -->
+                            <!-- ko if: !isExpired() -->
+                                <li class="promote-slider_item js-promote-slider-item js-slider-frame">
+                                    <a class="news-view js-related-link" href="https://worldoftanks.ru/ru/news/special-offers/exp-exchange/" draggable="false">
+                                        <span class="news-view_header">
+                                            <span class="news-view_pic" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/exp-exchange-615.jpg');"></span>
+                                            <span class="news-view_info">
+                                                <span class="news-view_title">Успей перевести опыт выгодно!</span>
+                                            </span>
+                                        </span>
+                                        <span class="news-view_data">
+                                            <!-- ko if: eventStatus() === EVENT_STATUSES.PLANNING -->
+                                                <span class="news-view_text" style="display: none" data-bind="visible: true">До начала:</span>
+                                            <!-- /ko -->
+                                            <!-- ko if: eventStatus() === EVENT_STATUSES.ACTIVE -->
+                                                <span class="news-view_text" style="display: none" data-bind="visible: true">До завершения:</span>
+                                            <!-- /ko -->
+                                            <span class="news-view_nums" style="display: none" data-bind="visible: true, css: {'news-view_nums__future': eventStatus() === EVENT_STATUSES.PLANNING}">
+                                                <!-- ko if: daysLeft() > 0 -->
+                                                    <span data-bind="text: daysLeft"></span><span class="news-view_label" data-bind="text: daysLeftText()"></span>
+                                                <!-- /ko -->
+                                                <!-- ko if: daysLeft() === 0 -->
+                                                    <span data-bind="leadingZero: hoursLeft"></span><span class="news-view_label" data-bind="text: hoursLeftText()"></span>
+                                                    <span class="news-view_colon">:</span>
+                                                    <span data-bind="leadingZero: minutesLeft"></span><span class="news-view_label" data-bind="text: minutesLeftText()"></span>
+                                                    <span class="news-view_colon">:</span>
+                                                    <span data-bind="leadingZero: secondsLeft"></span><span class="news-view_label" data-bind="text: secondsLeftText()"></span>
+                                                <!-- /ko -->
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                            <!-- /ko -->
+                        <!-- /ko -->
+                        
+                        <!-- ko with: countdowns[1394] -->
+                            <!-- ko if: !isExpired() -->
+                                <li class="promote-slider_item js-promote-slider-item js-slider-frame">
+                                    <a class="news-view js-related-link" href="https://worldoftanks.ru/ru/news/special-offers/predlozhenie-yanvaria-2019/" draggable="false">
+                                        <span class="news-view_header">
+                                            <span class="news-view_pic" style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/615h346df.jpg');"></span>
+                                            <span class="news-view_info">
+                                                <span class="news-view_title">Золото, премиум, резервы и М3 лёгкий в предложениях января</span>
+                                            </span>
+                                        </span>
+                                        <span class="news-view_data">
+                                            <!-- ko if: eventStatus() === EVENT_STATUSES.PLANNING -->
+                                                <span class="news-view_text" style="display: none" data-bind="visible: true">До начала:</span>
+                                            <!-- /ko -->
+                                            <!-- ko if: eventStatus() === EVENT_STATUSES.ACTIVE -->
+                                                <span class="news-view_text" style="display: none" data-bind="visible: true">До завершения:</span>
+                                            <!-- /ko -->
+                                            <span class="news-view_nums" style="display: none" data-bind="visible: true, css: {'news-view_nums__future': eventStatus() === EVENT_STATUSES.PLANNING}">
+                                                <!-- ko if: daysLeft() > 0 -->
+                                                    <span data-bind="text: daysLeft"></span><span class="news-view_label" data-bind="text: daysLeftText()"></span>
+                                                <!-- /ko -->
+                                                <!-- ko if: daysLeft() === 0 -->
+                                                    <span data-bind="leadingZero: hoursLeft"></span><span class="news-view_label" data-bind="text: hoursLeftText()"></span>
+                                                    <span class="news-view_colon">:</span>
+                                                    <span data-bind="leadingZero: minutesLeft"></span><span class="news-view_label" data-bind="text: minutesLeftText()"></span>
+                                                    <span class="news-view_colon">:</span>
+                                                    <span data-bind="leadingZero: secondsLeft"></span><span class="news-view_label" data-bind="text: secondsLeftText()"></span>
+                                                <!-- /ko -->
+                                            </span>
+                                        </span>
+                                    </a>
+                                </li>
+                            <!-- /ko -->
+                        <!-- /ko -->
+                        
+                    </ul>
+                </div>
+                <nav class="slider-dots js-slider-container">
+                    <div class="slider-dots_item js-slider-element" data-active-class="slider-dots_item__active"></div>
+                </nav>
+                
+            </div>
+            <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/hammer/hammer.min.js"></script>
+            <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/content_slider.js"></script>
+            <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/special_offers/js/special_offers_widget.js"></script>
+            <script>
+                $(function() {
+                    'use strict';
+
+                    var $specialOffersWidget = $('.js-special-offers-341996'),
+                        options = {
+                            id: 341996,
+                            events: {"1400": {"startAt": 1547445600.0, "endAt": 1548048600.0}, "1402": {"startAt": 1547456400.0, "endAt": 1548061200.0}, "1394": {"startAt": 1546333200.0, "endAt": 1549011600.0}, "1399": {"startAt": 1547272800.0, "endAt": 1547875800.0}}
+                        };
+
+                    if ($specialOffersWidget.length) {
+                        if (typeof SpecialOffersWidget === 'function') {
+                            new SpecialOffersWidget(options);
+                        } else {
+                            $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/hammer/hammer.min.js', function() {
+                                $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/content_slider.js', function() {
+                                    $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/special_offers/js/special_offers_widget.js', function() {
+                                        new SpecialOffersWidget(options);
+                                    });
+                                });
+                            });
+                        }
+                    }
+                });
+            </script>
+        </div>
+    
+
+        <div class="js-placeholder-additional-content">
+            
+    <div class="promote-slider promote-slider__showcase js-showcase-widget-bg js-showcase-widget js-showcase-342000">
+        <div class="promote-slider_inner">
+            <div class="promote-slider_holder">
+                <ul class="promote-slider_list promote-slider_list__transition js-promote-slider-list-342000" data-slider-transition-class="promote-slider_list__transition">
+                    
+                        <li class="promote-slider_item js-promote-slider-item js-slider-frame js-wgcds-content-item"
+    data-wgcds-place="showcase_json"
+    data-wgcds-host="cds.wargaming.net"
+    data-wgcds-consumer="wot_portal_ru">
+</li>
+<a class="showcase js-related-link js-showcase-template" href="" draggable="false">
+    <span class="showcase_pic js-wgcds-event-show js-showcase-pic"></span>
+    <span class="showcase_info">
+        <span class="showcase_title js-showcase-title"></span>
+    </span>
+</a>
+                    
+                        
+    <li class="promote-slider_item js-promote-slider-item js-slider-frame" data-index="2">
+        <a class="showcase  js-related-link" href="https://worldoftanks.ru/b4r/1250/go?to=http://worldoftanks.ru/ru/in_development/?link_place=homepage_banner_content"  draggable="false">
+            
+                <span class="showcase_pic"
+                      style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/dev-main-new-2-min.jpg');"></span>
+            
+            
+                <span class="showcase_info">
+                    <span class="showcase_title">В РАЗРАБОТКЕ</span>
+                </span>
+            
+        </a>
+    </li>
+
+                    
+                        
+    <li class="promote-slider_item js-promote-slider-item js-slider-frame" data-index="3">
+        <a class="showcase  js-related-link" href="https://worldoftanks.ru/b4r/1252/go?to=http://vitrina.wargaming.net/?utm_campaign=wot-portal&utm_medium=banner&utm_source=home-page&utm_content=vitrina"  draggable="false">
+            
+                <span class="showcase_pic"
+                      style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/souvenir-main-new-2-min_KRTDbEP.jpg');"></span>
+            
+            
+                <span class="showcase_info">
+                    <span class="showcase_title">СУВЕНИРНАЯ ПРОДУКЦИЯ</span>
+                </span>
+            
+        </a>
+    </li>
+
+                    
+                        
+    <li class="promote-slider_item js-promote-slider-item js-slider-frame" data-index="4">
+        <a class="showcase  js-related-link" href="https://worldoftanks.ru/b4r/1309/go?to=https://worldoftanks.ru/ru/tankopedia/"  draggable="false">
+            
+                <span class="showcase_pic"
+                      style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/615_1-tankopedia-min_BG525J7.jpg');"></span>
+            
+            
+                <span class="showcase_info">
+                    <span class="showcase_title">Танковедение</span>
+                </span>
+            
+        </a>
+    </li>
+
+                    
+                </ul>
+            </div>
+            <nav class="slider-dots js-slider-container">
+                <div class="slider-dots_item js-slider-element" data-active-class="slider-dots_item__active"></div>
+            </nav>
+        </div>
+        <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/hammer/hammer.min.js"></script>
+        <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/content_slider.js"></script>
+        <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/showcase/js/showcase.js"></script>
+        <script>
+            (function() {
+                'use strict';
+
+                var $showcaseWidget = $('.js-showcase-342000'),
+                    $cdsBanners = $('.js-wgcds-content-item', $showcaseWidget),
+                    options = {
+                        id: '342000',
+                        lang: 'ru',
+                        cdsScriptUrl: 'https://static-cds.gcdn.co/static/client/js/jquery.wgcds.min.js',
+                        isAnalyticsEnabled: false,
+                        areCDSBannersAvailable: ($cdsBanners.length > 0)
+                    };
+
+                $(function() {
+                    if ($showcaseWidget.length) {
+                        if (typeof ContentSlider === 'function' && typeof Hammer === 'function' && typeof ShowcaseWidget === 'function') {
+                            new ShowcaseWidget(options);
+                        } else {
+                            $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/hammer/hammer.min.js', function() {
+                                $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/content_slider.js', function() {
+                                    $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/showcase/js/showcase.js', function() {
+                                        new ShowcaseWidget(options);
+                                    });
+                                });
+                            });
+                        }
+                    }
+                });
+            })();
+        </script>
+    </div>
+
+    
+        
+        
+
+        <section class="columns-wrapper">
+            <header class="columns-wrapper_header">
+                <div class="columns-wrapper_holder">
+                    <h2 class="columns-wrapper_title">Видео</h2>
+                </div>
+                <a href="https://worldoftanks.ru/ru/media/" class="link-more link-more__nowrap">Все медиа</a>
+            </header>
+
+            <div class="columns-wrapper_inner">
+                
+                    <div class="columns-wrapper_column">
+                        
+    
+
+    
+        
+        
+
+        
+            
+        
+
+        
+            
+        
+
+        
+            <article class="small-news small-news__stretch">
+                <a href="https://worldoftanks.ru/ru/media/9/vbr-110/"
+                   class="small-news_link small-news_link__wide js-video-widget-hover-341997 js-video-widget-popup-341997"
+                   data-video-url="https://www.youtube.com/embed/gEAYBnMgOyA/?autoplay=1&amp;hl=ru&amp;rel=0"
+                   data-index="0"
+                   data-page-title="ВБР 110. Полёт валькирий"
+                   data-hover-class="small-news_link__hover">
+
+                    <span class="small-news_img-holder small-news_img-holder__wide">
+                        <span class="small-news_img" style="background-image: url(https://img.youtube.com/vi/gEAYBnMgOyA/0.jpg);"></span>
+                        <span class="small-news_play small-news_play__big">смотреть</span>
+                    </span>
+                </a>
+                <div class="small-news_info small-news_info__wide small-news_info__stretch">
+                    <a href="https://worldoftanks.ru/ru/media/9/vbr-110/"
+                       class="small-news_title small-news_title__wide js-video-widget-hover-341997 js-video-widget-popup-341997"
+                       data-index="0"
+                       data-video-url="https://www.youtube.com/embed/gEAYBnMgOyA/?autoplay=1&amp;hl=ru&amp;rel=0" data-page-title="ВБР 110. Полёт валькирий">
+
+                        <span class="small-news_heading">ВБР 110. Полёт валькирий</span>
+                    </a>
+                    <a href="https://worldoftanks.ru/ru/media/9/" class="small-news_cat">Видео</a>
+                    <span class="small-news_time js-relative-datetime-format" data-timestamp="1547733600.0"></span>
+                </div>
+            </article>
+        
+    
+
+                    </div>
+                    <div class="columns-wrapper_column">
+                        
+    
+
+    
+        
+        
+
+        
+            
+        
+
+        
+            
+        
+
+        
+            <article class="small-news">
+                <a href="https://worldoftanks.ru/ru/media/9/lrn-157/"
+                   class="small-news_link js-video-widget-hover-341997 js-video-widget-popup-341997"
+                   data-index="1"
+                   data-hover-class="small-news_link__hover"
+                   data-video-url="https://www.youtube.com/embed/ui8hMKx2A1Q/?autoplay=1&amp;hl=ru&amp;rel=0"
+                   data-page-title="Лучшие реплеи недели. Эпизод 157">
+
+                    <span class="small-news_img-holder">
+                        <span class="small-news_img" style="background-image: url(https://img.youtube.com/vi/ui8hMKx2A1Q/0.jpg);"></span>
+                        <span class="small-news_play">смотреть</span>
+                    </span>
+                </a>
+                <div class="small-news_info">
+                    <a href="https://worldoftanks.ru/ru/media/9/lrn-157/"
+                       target="_blank"
+                       rel="noopener"
+                       class="small-news_title js-video-widget-hover-341997 js-video-widget-popup-341997"
+                       data-index="1"
+                       data-hover-class="small-news_title__hover"
+                       data-video-url="https://www.youtube.com/embed/ui8hMKx2A1Q/?autoplay=1&amp;hl=ru&amp;rel=0"
+                       data-page-title="Лучшие реплеи недели. Эпизод 157">
+
+                        Лучшие реплеи недели. Эпизод 157
+                    </a>
+                    <a href="https://worldoftanks.ru/ru/media/9/" class="small-news_cat">Видео</a>
+                    <span class="small-news_time js-relative-datetime-format" data-timestamp="1547647200.0"></span>
+                </div>
+            </article>
+        
+    
+
+                        
+    
+
+    
+        
+        
+
+        
+            
+        
+
+        
+            
+        
+
+        
+            <article class="small-news">
+                <a href="https://worldoftanks.ru/ru/media/9/akcii-janvaria-2/"
+                   class="small-news_link js-video-widget-hover-341997 js-video-widget-popup-341997"
+                   data-index="2"
+                   data-hover-class="small-news_link__hover"
+                   data-video-url="https://www.youtube.com/embed/v3qgaQ5ln9k/?autoplay=1&amp;hl=ru&amp;rel=0"
+                   data-page-title="Акции января. Часть 2">
+
+                    <span class="small-news_img-holder">
+                        <span class="small-news_img" style="background-image: url(https://img.youtube.com/vi/v3qgaQ5ln9k/0.jpg);"></span>
+                        <span class="small-news_play">смотреть</span>
+                    </span>
+                </a>
+                <div class="small-news_info">
+                    <a href="https://worldoftanks.ru/ru/media/9/akcii-janvaria-2/"
+                       target="_blank"
+                       rel="noopener"
+                       class="small-news_title js-video-widget-hover-341997 js-video-widget-popup-341997"
+                       data-index="2"
+                       data-hover-class="small-news_title__hover"
+                       data-video-url="https://www.youtube.com/embed/v3qgaQ5ln9k/?autoplay=1&amp;hl=ru&amp;rel=0"
+                       data-page-title="Акции января. Часть 2">
+
+                        Акции января. Часть 2
+                    </a>
+                    <a href="https://worldoftanks.ru/ru/media/9/" class="small-news_cat">Видео</a>
+                    <span class="small-news_time js-relative-datetime-format" data-timestamp="1547560756.0"></span>
+                </div>
+            </article>
+        
+    
+
+                        
+    
+
+    
+        
+        
+
+        
+            
+        
+
+        
+            
+        
+
+        
+            <article class="small-news">
+                <a href="https://worldoftanks.ru/ru/media/9/lrn-156/"
+                   class="small-news_link js-video-widget-hover-341997 js-video-widget-popup-341997"
+                   data-index="3"
+                   data-hover-class="small-news_link__hover"
+                   data-video-url="https://www.youtube.com/embed/bszST9VgcGI/?autoplay=1&amp;hl=ru&amp;rel=0"
+                   data-page-title="Лучшие реплеи недели. Эпизод 156">
+
+                    <span class="small-news_img-holder">
+                        <span class="small-news_img" style="background-image: url(https://img.youtube.com/vi/bszST9VgcGI/0.jpg);"></span>
+                        <span class="small-news_play">смотреть</span>
+                    </span>
+                </a>
+                <div class="small-news_info">
+                    <a href="https://worldoftanks.ru/ru/media/9/lrn-156/"
+                       target="_blank"
+                       rel="noopener"
+                       class="small-news_title js-video-widget-hover-341997 js-video-widget-popup-341997"
+                       data-index="3"
+                       data-hover-class="small-news_title__hover"
+                       data-video-url="https://www.youtube.com/embed/bszST9VgcGI/?autoplay=1&amp;hl=ru&amp;rel=0"
+                       data-page-title="Лучшие реплеи недели. Эпизод 156">
+
+                        Лучшие реплеи недели. Эпизод 156
+                    </a>
+                    <a href="https://worldoftanks.ru/ru/media/9/" class="small-news_cat">Видео</a>
+                    <span class="small-news_time js-relative-datetime-format" data-timestamp="1546955490.0"></span>
+                </div>
+            </article>
+        
+    
+
+                    </div>
+                    <div class="columns-wrapper_column">
+                        
+    
+
+    
+        
+        
+
+        
+            
+        
+
+        
+            
+        
+
+        
+            <article class="small-news">
+                <a href="https://worldoftanks.ru/ru/media/9/zanimatelnaya-mekhanika-maskirovka/"
+                   class="small-news_link js-video-widget-hover-341997 js-video-widget-popup-341997"
+                   data-index="4"
+                   data-hover-class="small-news_link__hover"
+                   data-video-url="https://www.youtube.com/embed/A-xqRg7K8a8/?autoplay=1&amp;hl=ru&amp;rel=0"
+                   data-page-title="Занимательная механика. Обнаружение и маскировка">
+
+                    <span class="small-news_img-holder">
+                        <span class="small-news_img" style="background-image: url(https://img.youtube.com/vi/A-xqRg7K8a8/0.jpg);"></span>
+                        <span class="small-news_play">смотреть</span>
+                    </span>
+                </a>
+                <div class="small-news_info">
+                    <a href="https://worldoftanks.ru/ru/media/9/zanimatelnaya-mekhanika-maskirovka/"
+                       target="_blank"
+                       rel="noopener"
+                       class="small-news_title js-video-widget-hover-341997 js-video-widget-popup-341997"
+                       data-index="4"
+                       data-hover-class="small-news_title__hover"
+                       data-video-url="https://www.youtube.com/embed/A-xqRg7K8a8/?autoplay=1&amp;hl=ru&amp;rel=0"
+                       data-page-title="Занимательная механика. Обнаружение и маскировка">
+
+                        Занимательная механика. Обнаружение и маскировка
+                    </a>
+                    <a href="https://worldoftanks.ru/ru/media/9/" class="small-news_cat">Видео</a>
+                    <span class="small-news_time js-relative-datetime-format" data-timestamp="1546618191.0"></span>
+                </div>
+            </article>
+        
+    
+
+                        
+    
+
+    
+        
+        
+
+        
+            
+        
+
+        
+            
+        
+
+        
+            <article class="small-news">
+                <a href="https://worldoftanks.ru/ru/media/9/vbr-109/"
+                   class="small-news_link js-video-widget-hover-341997 js-video-widget-popup-341997"
+                   data-index="5"
+                   data-hover-class="small-news_link__hover"
+                   data-video-url="https://www.youtube.com/embed/5WXbq0zwIWc/?autoplay=1&amp;hl=ru&amp;rel=0"
+                   data-page-title="ВБР 109. Весёлые кульбиты">
+
+                    <span class="small-news_img-holder">
+                        <span class="small-news_img" style="background-image: url(https://img.youtube.com/vi/5WXbq0zwIWc/0.jpg);"></span>
+                        <span class="small-news_play">смотреть</span>
+                    </span>
+                </a>
+                <div class="small-news_info">
+                    <a href="https://worldoftanks.ru/ru/media/9/vbr-109/"
+                       target="_blank"
+                       rel="noopener"
+                       class="small-news_title js-video-widget-hover-341997 js-video-widget-popup-341997"
+                       data-index="5"
+                       data-hover-class="small-news_title__hover"
+                       data-video-url="https://www.youtube.com/embed/5WXbq0zwIWc/?autoplay=1&amp;hl=ru&amp;rel=0"
+                       data-page-title="ВБР 109. Весёлые кульбиты">
+
+                        ВБР 109. Весёлые кульбиты
+                    </a>
+                    <a href="https://worldoftanks.ru/ru/media/9/" class="small-news_cat">Видео</a>
+                    <span class="small-news_time js-relative-datetime-format" data-timestamp="1546526821.0"></span>
+                </div>
+            </article>
+        
+    
+
+                        
+    
+
+    
+        
+        
+
+        
+            
+        
+
+        
+            
+        
+
+        
+            <article class="small-news">
+                <a href="https://worldoftanks.ru/ru/media/9/lrn-155/"
+                   class="small-news_link js-video-widget-hover-341997 js-video-widget-popup-341997"
+                   data-index="6"
+                   data-hover-class="small-news_link__hover"
+                   data-video-url="https://www.youtube.com/embed/B3jhsyh195I/?autoplay=1&amp;hl=ru&amp;rel=0"
+                   data-page-title="Лучшие реплеи недели. Эпизод 155">
+
+                    <span class="small-news_img-holder">
+                        <span class="small-news_img" style="background-image: url(https://img.youtube.com/vi/B3jhsyh195I/0.jpg);"></span>
+                        <span class="small-news_play">смотреть</span>
+                    </span>
+                </a>
+                <div class="small-news_info">
+                    <a href="https://worldoftanks.ru/ru/media/9/lrn-155/"
+                       target="_blank"
+                       rel="noopener"
+                       class="small-news_title js-video-widget-hover-341997 js-video-widget-popup-341997"
+                       data-index="6"
+                       data-hover-class="small-news_title__hover"
+                       data-video-url="https://www.youtube.com/embed/B3jhsyh195I/?autoplay=1&amp;hl=ru&amp;rel=0"
+                       data-page-title="Лучшие реплеи недели. Эпизод 155">
+
+                        Лучшие реплеи недели. Эпизод 155
+                    </a>
+                    <a href="https://worldoftanks.ru/ru/media/9/" class="small-news_cat">Видео</a>
+                    <span class="small-news_time js-relative-datetime-format" data-timestamp="1546420656.0"></span>
+                </div>
+            </article>
+        
+    
+
+                    </div>
+                
+            </div>
+            <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/advanced_video_popup.js"></script>
+            <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/widgets/video_content.js"></script>
+            <script>
+                (function() {
+                    'use strict';
+
+                    $(function() {
+                        var $videoWidget = $('.js-video-widget-popup-341997'),
+                                options = {
+                                    id: '341997'
+                                };
+
+                        if ($videoWidget.length) {
+                            if (typeof VideoContentWidget === 'function') {
+                                VideoContentWidget(options);
+                            } else {
+                                $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/advanced_video_popup.js', function() {
+                                    $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/widgets/video_content.js', function() {
+                                        VideoContentWidget(options);
+                                    });
+                                });
+                            }
+                        }
+                    });
+                })();
+            </script>
+        </section>
+    
+
+    <div class="promote-slider promote-slider__showcase js-showcase-widget-bg js-showcase-widget js-showcase-341998">
+        <div class="promote-slider_inner">
+            <div class="promote-slider_holder">
+                <ul class="promote-slider_list promote-slider_list__transition js-promote-slider-list-341998" data-slider-transition-class="promote-slider_list__transition">
+                    
+                        
+    <li class="promote-slider_item js-promote-slider-item js-slider-frame" data-index="1">
+        <a class="showcase  js-related-link" href="https://worldoftanks.ru/b4r/1259/go?to=http://worldoftanks.ru/ru/tournaments/?link_place=homepage_banner_content"  draggable="false">
+            
+                <span class="showcase_pic"
+                      style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/new_tourneys_615x350_K2FzSC4.jpg');"></span>
+            
+            
+                <span class="showcase_info">
+                    <span class="showcase_title"> </span>
+                </span>
+            
+        </a>
+    </li>
+
+                    
+                        
+    <li class="promote-slider_item js-promote-slider-item js-slider-frame" data-index="2">
+        <a class="showcase  js-related-link" href="https://worldoftanks.ru/b4r/1256/go?to=http://worldoftanks.ru/ru/soft/mods/wgfm/?link_place=home-page"  draggable="false">
+            
+                <span class="showcase_pic"
+                      style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/radio-main-new-min_XLeV4su.jpg');"></span>
+            
+            
+                <span class="showcase_info">
+                    <span class="showcase_title"> </span>
+                </span>
+            
+        </a>
+    </li>
+
+                    
+                        
+    <li class="promote-slider_item js-promote-slider-item js-slider-frame" data-index="3">
+        <a class="showcase  js-related-link" href="https://worldoftanks.ru/b4r/1354/go?to=https://worldoftanks.ru/ru/content/streams/"  draggable="false">
+            
+                <span class="showcase_pic"
+                      style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/stream-615.jpg');"></span>
+            
+            
+                <span class="showcase_info">
+                    <span class="showcase_title">Регулярные трансляции</span>
+                </span>
+            
+        </a>
+    </li>
+
+                    
+                        
+    <li class="promote-slider_item js-promote-slider-item js-slider-frame" data-index="4">
+        <a class="showcase  js-related-link" href="https://worldoftanks.ru/b4r/1258/go?to=http://worldoftanks.ru/ru/content/guide/account_security/?link_place=homepage_banner_content"  draggable="false">
+            
+                <span class="showcase_pic"
+                      style="background-image: url('//ru-wotp.wgcdn.co/dcont/fb/image/safety-main-new-min.jpg');"></span>
+            
+            
+                <span class="showcase_info">
+                    <span class="showcase_title">БЕЗОПАСНОСТЬ</span>
+                </span>
+            
+        </a>
+    </li>
+
+                    
+                </ul>
+            </div>
+            <nav class="slider-dots js-slider-container">
+                <div class="slider-dots_item js-slider-element" data-active-class="slider-dots_item__active"></div>
+            </nav>
+        </div>
+        <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/hammer/hammer.min.js"></script>
+        <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/content_slider.js"></script>
+        <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/showcase/js/showcase.js"></script>
+        <script>
+            (function() {
+                'use strict';
+
+                var $showcaseWidget = $('.js-showcase-341998'),
+                    $cdsBanners = $('.js-wgcds-content-item', $showcaseWidget),
+                    options = {
+                        id: '341998',
+                        lang: 'ru',
+                        cdsScriptUrl: 'https://static-cds.gcdn.co/static/client/js/jquery.wgcds.min.js',
+                        isAnalyticsEnabled: false,
+                        areCDSBannersAvailable: ($cdsBanners.length > 0)
+                    };
+
+                $(function() {
+                    if ($showcaseWidget.length) {
+                        if (typeof ContentSlider === 'function' && typeof Hammer === 'function' && typeof ShowcaseWidget === 'function') {
+                            new ShowcaseWidget(options);
+                        } else {
+                            $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/plugins/hammer/hammer.min.js', function() {
+                                $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/portal/js/content_slider.js', function() {
+                                    $.getScript('//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f/showcase/js/showcase.js', function() {
+                                        new ShowcaseWidget(options);
+                                    });
+                                });
+                            });
+                        }
+                    }
+                });
+            })();
+        </script>
+    </div>
+
+
+
+
+<script>
+    $(function() {
+        var CACHE_TIME = 5 * 60 * 1000,
+            INBETWEENER_URL = "/ru/inbetweeners/ru/inbetweener/78",
+            WIDGET_ID = '341999',
+            CACHE_KEY = 'inbetweener:' + WIDGET_ID + ':' + wgsdk.vars.CURRENT_REQUEST_LANGUAGE,
+            $widget = $('.js-inbetweener-content-' + WIDGET_ID),
+            model = {
+                isLoading: ko.observable(true)
+            },
+            renderInbetweener = function(data) {
+                model.isLoading(false);
+                $widget.html(data);
+            };
+
+        ko.applyBindings(model, $widget.get(0));
+
+        if (amplify.store(CACHE_KEY)) {
+            renderInbetweener(amplify.store(CACHE_KEY));
+        } else {
+            $.ajax({
+                    url: INBETWEENER_URL,
+                    dataType: 'html'
+                })
+                .done(function(data) {
+                    /* Cleanup, delete expired cache data */
+                    amplify.store();
+
+                    amplify.store(CACHE_KEY, data, {'expires': CACHE_TIME });
+                    renderInbetweener(data);
+                })
+                .fail(function() {
+                    model.isLoading(false);
+                    $widget.hide();
+                });
+        }
+    });
+</script>
+<div class="js-inbetweener js-inbetweener-content-341999">
+    <div class="inbetweener_loader" data-bind="spinner: isLoading, spinnerOptions: {top: '50%', color: '#FFFFFF'}"></div>
+</div>
+        </div>
+        
+    </div>
+
+            
+
+            
+            
+        </div>
+
+        
+            
+
+<div class="footer js-footer">
+    <div class="footer_holder">
+        
+            
+                <div class="footer-social">
+                    
+                    <ul class="social-big">
+                        
+                        <li class="social-big_item">
+        <a class="social-big_link" href="http://forum.worldoftanks.ru/?link_place=wotp_link_footer" target="_blank" rel="noopener">
+            <span class="social-big_ico-holder">
+                <span class="social-big_ico social-big_ico__wg"></span>
+            </span>
+            <div class="social-big_info">
+                <p class="social-big_text">Вступайте в сообщество</p>
+                <p class="social-big_followers">Более 110 000 000 игроков</p>
+            </div>
+        </a>
+    </li>
+                        
+                        
+                            <li class="social-big_item">
+        <a class="social-big_link" href="https://www.facebook.com/WorldOfTanks" target="_blank" rel="noopener">
+            <span class="social-big_ico-holder">
+                <span class="social-big_ico social-big_ico__facebook"></span>
+            </span>
+            <div class="social-big_info">
+                <p class="social-big_text">Присоединяйтесь к нам на Facebook</p>
+                <p class="social-big_followers">2 039 169 уже в сообществе</p>
+            </div>
+        </a>
+    </li>
+                        
+                        
+                            
+                            <li class="social-big_item">
+        <a class="social-big_link" href="http://vk.com/worldoftanks" target="_blank" rel="noopener">
+            <span class="social-big_ico-holder">
+                <span class="social-big_ico social-big_ico__vk"></span>
+            </span>
+            <div class="social-big_info">
+                <p class="social-big_text">Читайте ВКонтакте</p>
+                <p class="social-big_followers"></p>
+            </div>
+        </a>
+    </li>
+                        
+                        
+                        <li class="social-big_item">
+        <a class="social-big_link" href="http://www.youtube.com/user/WorldOfTanks" target="_blank" rel="noopener">
+            <span class="social-big_ico-holder">
+                <span class="social-big_ico social-big_ico__youtube"></span>
+            </span>
+            <div class="social-big_info">
+                <p class="social-big_text">Смотрите на YouTube</p>
+                <p class="social-big_followers">3 099 378 подписчиков</p>
+            </div>
+        </a>
+    </li>
+                        
+                        
+                    </ul>
+                </div>
+            
+        
+    </div>
+    <div class="footer_wrapper">
+        <div class="footer_holder">
+            
+                
+                
+                
+                
+                
+                <div class="footer_links">
+                    <div class="footer-logo">
+                        <a class="footer-logo_link" href="http://wargaming.net" target="_blank" rel="noopener">wargaming.net</a>
+                    </div>
+                    
+                    
+                        <ul class="footer-menu">
+                            <li class="footer-menu_item">
+                                <a class="footer-menu_link" href="https://ru.wargaming.net/support/products/wot/?link_place=wotp_link_footer">Центр поддержки</a>
+                            </li>
+                            <li class="footer-menu_item">
+                                <a class="footer-menu_link" href="http://wargaming.com/ru/partners/">Партнёры</a>
+                            </li>
+                            
+                            <li class="footer-menu_item">
+                                <a class="footer-menu_link" href="http://legal.ru.wargaming.net/eula/">Лицензионное соглашение</a>
+                            </li>
+                            
+                            
+                            <li class="footer-menu_item">
+                                <a class="footer-menu_link" href="http://legal.ru.wargaming.net/privacy-policy/">Политика конфиденциальности</a>
+                            </li>
+                            
+                            
+                            <li class="footer-menu_item">
+                                <a class="footer-menu_link" href="https://worldoftanks.ru/ru/content/wot_game_rules/">Правила игры</a>
+                            </li>
+                            
+                            
+                                <li class="footer-menu_item">
+                                    <a class="footer-menu_link" href="http://wargaming.com/ru/careers/" target="_blank">Карьера</a>
+                                </li>
+                            
+                            <li class="footer-menu_item">
+                                <a class="change-region js-change-region" href="#" data-lang-class-prefix="change-region__" data-opened-class="change-region__open">СНГ (Русский)</a>
+                            </li>
+                        </ul>
+                    
+
+                    
+                    
+
+                    
+                    
+
+                    
+                    
+
+                    
+                    
+                </div>
+            
+        </div>
+        
+            <div class="region-selector  js-region-selector" data-opened-class="region-selector__open">
+    <div class="region-selector_inner">
+        <div class="region-selector_header">
+            <div class="region-selector_title">Выберите регион</div>
+            <div class="region-selector_subtitle">Выбор другого региона может привести к изменению содержимого сайта.</div>
+        </div>
+        <div class="region-selector_holder js-region-selector_holder">
+            
+                
+                
+
+                
+
+                
+                    
+                        <div class="region-selector_cluster-holder">
+                    
+                        <div class="region-selector_cluster region-selector_cluster__current-RUS">
+                            <p class="region-selector_name">СНГ:</p>
+                            
+                                
+                                    
+                                    <div class="region-selector_item region-selector_item__current">
+                                        
+                                            <span class="region-selector_link region-selector_link__ru js-current-region" data-region-name="СНГ">Русский</span>
+                                        
+                                    </div>
+                                
+                            
+                        </div>
+                    
+                
+                    
+                        <div class="region-selector_cluster region-selector_cluster__EUR">
+                            <p class="region-selector_name">Европа:</p>
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__es" href="http://worldoftanks.eu/set_language/es/?next=worldoftanks.eu" data-region-name="Европа">Español</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__de" href="http://worldoftanks.eu/set_language/de/?next=worldoftanks.eu" data-region-name="Европа">Deutsch</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__en" href="http://worldoftanks.eu/set_language/en/?next=worldoftanks.eu" data-region-name="Европа">English</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__fr" href="http://worldoftanks.eu/set_language/fr/?next=worldoftanks.eu" data-region-name="Европа">Français</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__cs" href="http://worldoftanks.eu/set_language/cs/?next=worldoftanks.eu" data-region-name="Европа">Čeština</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__pl" href="http://worldoftanks.eu/set_language/pl/?next=worldoftanks.eu" data-region-name="Европа">Polski</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__tr" href="http://worldoftanks.eu/set_language/tr/?next=worldoftanks.eu" data-region-name="Европа">Türkçe</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__it" href="http://worldoftanks.eu/set_language/it/?next=worldoftanks.eu" data-region-name="Европа">Italiano</a>
+                                    </div>
+                                
+                            
+                        </div>
+                    
+                        </div>
+                    
+                
+                    
+                        <div class="region-selector_cluster-holder">
+                    
+                        <div class="region-selector_cluster region-selector_cluster__USA">
+                            <p class="region-selector_name">Северная Америка:</p>
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__en" href="http://worldoftanks.com/set_language/en/?next=worldoftanks.com" data-region-name="Северная Америка">English</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__pt-br" href="http://worldoftanks.com/set_language/pt-br/?next=worldoftanks.com" data-region-name="Северная Америка">Português</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__es-ar" href="http://worldoftanks.com/set_language/es-ar/?next=worldoftanks.com" data-region-name="Северная Америка">Español — América Latina</a>
+                                    </div>
+                                
+                            
+                        </div>
+                    
+                
+                    
+                        <div class="region-selector_cluster region-selector_cluster__SG">
+                            <p class="region-selector_name">Азия:</p>
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__th" href="http://worldoftanks.asia/set_language/th/?next=worldoftanks.asia" data-region-name="Азия">ไทย</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__en" href="http://worldoftanks.asia/set_language/en/?next=worldoftanks.asia" data-region-name="Азия">English</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__zh-tw" href="http://worldoftanks.asia/set_language/zh-tw/?next=worldoftanks.asia" data-region-name="Азия">繁體中文</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__ja" href="http://worldoftanks.asia/set_language/ja/?next=worldoftanks.asia" data-region-name="Азия">日本語</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__vi" href="http://worldoftanks.asia/set_language/vi/?next=worldoftanks.asia" data-region-name="Азия">Tiếng Việt</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__ko" href="http://worldoftanks.asia/set_language/ko/?next=worldoftanks.asia" data-region-name="Азия">한국어</a>
+                                    </div>
+                                
+                            
+                        </div>
+                    
+                        </div>
+                    
+                
+            
+        </div>
+    </div>
+    <a href="#" class="region-selector_close js-close-region"></a>
+</div>
+        
+        <script src="//ru-wotp.wgcdn.co/static/5.32.1_0d6e8f//portal/js/region_footer.js"></script>
+    </div>
+
+    
+    
+
+    <div class="footer_bottom">
+        <div class="footer_bottom-wrapper">
+            
+            
+            <div class="footer_copyright">
+                <div class="footer_copyright-text">
+                    © 2009–2019 <a class="footer_text-link" href="http://wargaming.net/">Wargaming.net</a> Все права защищены. Powered by BigWorld Technology™ © 12+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+        
+
+        
+    </div>
+</div>
+
+
+
+<div class="overlay js-region-selector-mobile" data-overlay-show-class="overlay__show">
+    <div class="popup">
+        <div class="popup_holder js-popup-holder">
+            <div class="popup_body">
+                <div class="popup_content">
+                    
+                    
+                        <div class="region-selector region-selector__mobile js-region-selector" data-opened-class="region-selector__open">
+    <div class="region-selector_inner">
+        <div class="region-selector_header">
+            <div class="region-selector_title">Выберите регион</div>
+            <div class="region-selector_subtitle">Выбор другого региона может привести к изменению содержимого сайта.</div>
+        </div>
+        <div class="region-selector_holder js-region-selector_holder">
+            
+                
+                
+
+                
+
+                
+                    
+                        <div class="region-selector_cluster-holder">
+                    
+                        <div class="region-selector_cluster region-selector_cluster__current-RUS">
+                            <p class="region-selector_name">СНГ:</p>
+                            
+                                
+                                    
+                                    <div class="region-selector_item region-selector_item__current">
+                                        
+                                            <span class="region-selector_link region-selector_link__ru js-current-region" data-region-name="СНГ">Русский</span>
+                                        
+                                    </div>
+                                
+                            
+                        </div>
+                    
+                
+                    
+                        <div class="region-selector_cluster region-selector_cluster__EUR">
+                            <p class="region-selector_name">Европа:</p>
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__es" href="http://worldoftanks.eu/set_language/es/?next=worldoftanks.eu" data-region-name="Европа">Español</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__de" href="http://worldoftanks.eu/set_language/de/?next=worldoftanks.eu" data-region-name="Европа">Deutsch</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__en" href="http://worldoftanks.eu/set_language/en/?next=worldoftanks.eu" data-region-name="Европа">English</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__fr" href="http://worldoftanks.eu/set_language/fr/?next=worldoftanks.eu" data-region-name="Европа">Français</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__cs" href="http://worldoftanks.eu/set_language/cs/?next=worldoftanks.eu" data-region-name="Европа">Čeština</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__pl" href="http://worldoftanks.eu/set_language/pl/?next=worldoftanks.eu" data-region-name="Европа">Polski</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__tr" href="http://worldoftanks.eu/set_language/tr/?next=worldoftanks.eu" data-region-name="Европа">Türkçe</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__it" href="http://worldoftanks.eu/set_language/it/?next=worldoftanks.eu" data-region-name="Европа">Italiano</a>
+                                    </div>
+                                
+                            
+                        </div>
+                    
+                        </div>
+                    
+                
+                    
+                        <div class="region-selector_cluster-holder">
+                    
+                        <div class="region-selector_cluster region-selector_cluster__USA">
+                            <p class="region-selector_name">Северная Америка:</p>
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__en" href="http://worldoftanks.com/set_language/en/?next=worldoftanks.com" data-region-name="Северная Америка">English</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__pt-br" href="http://worldoftanks.com/set_language/pt-br/?next=worldoftanks.com" data-region-name="Северная Америка">Português</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__es-ar" href="http://worldoftanks.com/set_language/es-ar/?next=worldoftanks.com" data-region-name="Северная Америка">Español — América Latina</a>
+                                    </div>
+                                
+                            
+                        </div>
+                    
+                
+                    
+                        <div class="region-selector_cluster region-selector_cluster__SG">
+                            <p class="region-selector_name">Азия:</p>
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__th" href="http://worldoftanks.asia/set_language/th/?next=worldoftanks.asia" data-region-name="Азия">ไทย</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__en" href="http://worldoftanks.asia/set_language/en/?next=worldoftanks.asia" data-region-name="Азия">English</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__zh-tw" href="http://worldoftanks.asia/set_language/zh-tw/?next=worldoftanks.asia" data-region-name="Азия">繁體中文</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__ja" href="http://worldoftanks.asia/set_language/ja/?next=worldoftanks.asia" data-region-name="Азия">日本語</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__vi" href="http://worldoftanks.asia/set_language/vi/?next=worldoftanks.asia" data-region-name="Азия">Tiếng Việt</a>
+                                    </div>
+                                
+                            
+                                
+                                    
+                                    <div class="region-selector_item">
+                                        <a class="region-selector_link region-selector_link__ko" href="http://worldoftanks.asia/set_language/ko/?next=worldoftanks.asia" data-region-name="Азия">한국어</a>
+                                    </div>
+                                
+                            
+                        </div>
+                    
+                        </div>
+                    
+                
+            
+        </div>
+    </div>
+    <a href="#" class="region-selector_close js-close-region"></a>
+</div>
+                    
+                </div>
+            </div>
+            <a href="#" class="popup_close-fixed js-close-region"></a>
+        </div>
+    </div>
+</div>
+
+
+
+
+    
+
+
+
+
+
+
+
+
+<div class="videopopup js-tank-videopopup" data-active-class="videopopup__show"> 
+    <div class="videopopup_wrapper js-videopopup-wrapper" data-width-class="videopopup_wrapper__width-calc">
+        <div class="videopopup_inner">
+            <div class="videopopup_holder js-videopopup-holder" data-title-class="videopopup_holder__title">
+                <iframe class="videopopup_frame js-videopopup-frame" data-title-class="videopopup_frame__title" allowfullscreen></iframe>
+                <div class="videopopup_title js-videopopup-title">
+                    <a href="#" class="link-external link-external__light js-videopopup-link" target="_blank" rel="noopener">
+                        <span class="js-videopopup-link-text"></span>&nbsp;<span class="link-external_ico"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="videopopup_close js-trailer-close" href="#">Закрыть</a>
+</div>
+
+
+<div class="support"></div>
+
+
+
+
+
+
+
+</body>
+</html>

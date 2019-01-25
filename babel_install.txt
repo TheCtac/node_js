@@ -1,0 +1,8 @@
+ NodeJS uses CommonJS, thatswhy necessary to use babel lib
+    run  npm init -y to create package.JSON
+    run npm install babel-cli babel-core babel-preset-es2015 --save-dev
+        to install tree babel packegs
+     run npm install to install all needed modules wroted in packege.json
+     set directory srtucture
+    add to packege.json scripts list value
+        "build" : "babel in_ES6 -d out_CommonJS --presets es2015"
